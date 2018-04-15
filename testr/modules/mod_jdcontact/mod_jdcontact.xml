@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>J DContact</name>
+	<author>Md. Shaon Bahadur</author>
+	<creationDate>10 April 2012</creationDate>
+	<copyright>Copyright (C) 2013 J Download. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@j-download.com</authorEmail>
+	<authorUrl>www.j-download.com</authorUrl>
+	<version>1.0.4</version>
+	<description>
+        <![CDATA[
+            <table width="80%" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td>
+              <table width="100%" cellpadding="5" cellspacing="5" border="0"><tr><td valign="top"><img src="../modules/mod_jdcontact/tmpl/images/jdcontact.png" border="0" /><div style="text-align:center;font-weight:bold;padding-top:10px;">Version: 1.0.4</div></td>
+              <td valign="top" style="padding-left:60px;">
+                <p>J DContact is an ajax contact us module where data send to admin and user without page refresh. Backend has option to customize the front-end view. There is option to set different email address for different department. This module also has option to send a copy of the mail to yourself. Captcha validation is to protect spammer.</p>
+                <p>Module has below parameter:</p>
+                <p>
+                    <ul>
+                        <li>Wrapper BG Color</li>
+                        <li>Wrapper Width</li>
+                        <li>Input Field Width</li>
+                        <li>Input Field Border Color</li>
+                        <li>Sales Email</li>
+                        <li>Support Email</li>
+                        <li>Billing Email</li>
+                        <li>Show Department</li>
+                        <li>Show Send Copy</li>
+                        <li>Show Human Test</li>
+                        <li>da-DK,de-DE,en-GB,fr-FR,it-IT,nl-NL,ru-RU,sv-SE Language Translations</li>
+                    </ul>
+                </p>
+              </td></tr></table>
+            </td></tr>
+            </table>
+            ]]>
+    </description>
+	<files>
+		<filename module="mod_jdcontact">mod_jdcontact.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>mod_jdcontact.xml</filename>
+	</files>
+    <languages>
+		<language tag="en-GB">en-GB.mod_jdcontact.ini</language>
+        <language tag="da-DK">da-DK.mod_jdcontact.ini</language>
+        <language tag="de-DE">de-DE.mod_jdcontact.ini</language>
+        <language tag="fr-FR">fr-FR.mod_jdcontact.ini</language>
+        <language tag="it-IT">it-IT.mod_jdcontact.ini</language>
+        <language tag="nl-NL">nl-NL.mod_jdcontact.ini</language>
+        <language tag="ru-RU">ru-RU.mod_jdcontact.ini</language>
+        <language tag="sv-SE">sv-SE.mod_jdcontact.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LOGIN" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+            <field name="sales_address" type="text" default="sales@yourdomain.com" size="50" label="Sales Email" description="Please Enter Sales Address." />
+            <field name="support_address" type="text" default="support@yourdomain.com" size="50" label="Support Email" description="Please Enter Support Address." />
+            <field name="billing_address" type="text" default="billing@yourdomain.com" size="50" label="Billing Email" description="Please Enter Billing Address." />
+		    <field name="showdepartment" type="radio" default="1" label="Show Department" description="Please Select Yes To Show Department.">
+			    <option value="1">Yes</option>
+			    <option value="0">No</option>
+		    </field>
+		    <field name="showsendcopy" type="radio" default="1" label="Show Send Copy" description="Please Select Yes To Show Send Copy.">
+			    <option value="1">Yes</option>
+			    <option value="0">No</option>
+		    </field>
+		    <field name="humantestpram" type="radio" default="1" label="Show Human Test" description="Please Select Yes To Show Human Test.">
+			    <option value="1">Yes</option>
+			    <option value="0">No</option>
+		    </field>
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

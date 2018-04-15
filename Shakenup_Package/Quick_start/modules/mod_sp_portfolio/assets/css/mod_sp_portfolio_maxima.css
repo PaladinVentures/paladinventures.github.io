@@ -1,0 +1,222 @@
+/*
+# SP Portfolio - Simple Portfolio module by JoomShaper.com
+# -------------------------------------------------------------
+# Author    JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2014 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or Later
+# Websites: http://www.joomshaper.com
+*/
+
+div.maxima ul.sp-portfolio-filter{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+div.maxima ul.sp-portfolio-filter li{
+	display: inline-block;
+}
+
+div.maxima .btn.active{
+	background-color: #ccc;
+}
+
+div.maxima .btn.btn-primary{
+	background-color: #006dcc;
+	color: #fff;
+}
+
+div.maxima .btn.btn-primary:hover{
+	background-color: #04c;
+}
+
+div.maxima .col-1 {width:100%}
+div.maxima .col-2 {width:50%}
+div.maxima .col-3 {width:33%;}
+div.maxima .col-4 {width:25%}
+div.maxima .col-5 {width:20%}
+div.maxima .col-6 {width:16.666%}
+div.maxima .col-7 {width:14.256%}
+div.maxima .col-8 {width:12.5%}
+div.maxima .col-9 {width:11.111%}
+div.maxima .col-10 {width:10%}
+div.maxima{
+	margin-top: 20px;
+}
+div.maxima ul.sp-portfolio-items{
+	list-style: none;
+	padding: 0;
+	margin: -10px;
+	display: block;
+	position: relative;
+}
+
+div.maxima ul.sp-portfolio-items > li{
+	background: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+div.maxima .sp-portfolio-item-inner{
+	background: #f5f5f5;
+	padding: 10px;
+	margin: 10px;
+}
+
+div.maxima .sp-portfolio-thumb,
+div.maxima .sp-portfolio-item-details {
+	width: 50%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+div.maxima .sp-portfolio-thumb img{
+	width: 100%;
+}
+
+div.maxima .sp-portfolio-thumb .sp-portfolio-preview,
+div.maxima .sp-portfolio-thumb .sp-portfolio-link{
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	transition: 300ms;
+}
+
+div.maxima .sp-portfolio-thumb .sp-portfolio-preview{
+	background-image: url(../images/icon-plus.png);
+	left: 50%;
+	margin-left: -75px;
+}
+
+div.maxima .sp-portfolio-thumb .sp-portfolio-link{
+	background-image: url(../images/icon-link.png);
+	right: 50%;
+	margin-right: -75px;
+}
+
+div.maxima .sp-portfolio-thumb:hover .sp-portfolio-preview{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	margin-left: -45px;
+}
+
+div.maxima .sp-portfolio-thumb:hover .sp-portfolio-link{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	margin-right: -45px;
+}
+
+div.maxima .sp-portfolio-item-details {
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.maxima .sp-portfolio-item-details h4{
+	margin: 0;
+}
+
+div.maxima .sp-portfolio-item {
+	float:left;
+}
+
+div.maxima .sp-portfolio-loadmore{
+	text-align: center;
+}
+
+div.maxima .btn {
+	background-color:#f5f5f5;
+	background-image:none;
+	border:0;
+	border-radius:0;
+	box-shadow:none;
+	color:#333;
+	cursor:pointer;
+	display:inline-block;
+	font-size:14px;
+	line-height:20px;
+	margin-bottom:0;
+	padding:4px 12px;
+	text-align:center;
+	text-shadow:none;
+	vertical-align:middle;
+	-moz-border-radius:0;
+	-moz-box-shadow:none;
+	-webkit-border-radius:0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+div.maxima .sp-portfolio-loadmore .btn{
+	float: none;
+	margin-top: 30px;
+	padding: 0 20px;
+	min-width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #fff;
+}
+div.maxima .sp-portfolio-loadmore .btn.hide,
+div.maxima .sp-portfolio-loadmore .btn .icon-spinner,
+div.maxima .sp-portfolio-loadmore .btn.loading span{
+	display: none;
+}
+
+div.maxima .sp-portfolio-loadmore .btn.loading .icon-spinner{
+	display: block;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+/*Isotope Animation*/
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+
+.rtl .isotope .isotope-item {
+  -webkit-transition-property: right, top, -webkit-transform, opacity;
+     -moz-transition-property: right, top, -moz-transform, opacity;
+      -ms-transition-property: right, top, -ms-transform, opacity;
+       -o-transition-property: right, top, -o-transform, opacity;
+          transition-property: right, top, transform, opacity;
+}

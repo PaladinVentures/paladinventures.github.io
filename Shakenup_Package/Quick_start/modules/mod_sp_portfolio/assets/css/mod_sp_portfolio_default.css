@@ -1,0 +1,195 @@
+/*
+# SP Portfolio - Simple Portfolio module by JoomShaper.com
+# -------------------------------------------------------------
+# Author    JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2014 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or Later
+# Websites: http://www.joomshaper.com
+*/
+
+div.default ul.sp-portfolio-filter{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+div.default ul.sp-portfolio-filter li{
+	display: inline-block;
+}
+
+div.default .btn.active{
+	background-color: #ccc;
+}
+
+div.default .btn.btn-primary{
+	background-color: #006dcc;
+	color: #fff;
+}
+
+div.default .btn.btn-primary:hover{
+	background-color: #04c;
+}
+
+div.default .col-1 {width:100%}
+div.default .col-2 {width:50%}
+div.default .col-3 {width:33%;}
+div.default .col-4 {width:24%}
+div.default .col-5 {width:20%}
+div.default .col-6 {width:16%}
+div.default .col-7 {width:14%}
+div.default .col-8 {width:12.5%}
+div.default .col-9 {width:11%}
+div.default .col-10 {width:10%}
+div.default{
+	margin-top: 20px;
+}
+div.default ul.sp-portfolio-items{
+	list-style: none;
+	padding: 0;
+	margin: -10px;
+	display: block;
+	position: relative;
+}
+
+div.default ul.sp-portfolio-items > li{
+	background: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+div.default .sp-portfolio-item-inner{
+	margin: 10px;
+}
+
+div.default .sp-portfolio-thumb,
+div.default .sp-portfolio-item-details {
+	position: relative;
+	overflow: hidden;
+}
+
+div.default .sp-portfolio-thumb img{
+	width: 100%;
+}
+
+div.default .sp-portfolio-thumb .sp-portfolio-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 300ms;
+	transition: opacity 300ms;
+}
+
+div.default .sp-portfolio-thumb:hover .sp-portfolio-overlay{
+	opacity: 1;
+}
+
+div.default .sp-portfolio-thumb .sp-portfolio-overlay > div{
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+div.default .sp-portfolio-thumb .sp-portfolio-overlay > div > a{
+	margin: 0 2px;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	display: inline-block;
+	background: #000;
+}
+
+div.default .sp-portfolio-loadmore{
+	text-align: center;
+}
+
+div.default .btn {
+	background-color:#f5f5f5;
+	background-image:none;
+	border:0;
+	border-radius:0;
+	box-shadow:none;
+	color:#333;
+	cursor:pointer;
+	display:inline-block;
+	font-size:14px;
+	line-height:20px;
+	margin-bottom:0;
+	padding:4px 12px;
+	text-align:center;
+	text-shadow:none;
+	vertical-align:middle;
+	-moz-border-radius:0;
+	-moz-box-shadow:none;
+	-webkit-border-radius:0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+div.default .sp-portfolio-loadmore .btn{
+	float: none;
+	margin-top: 30px;
+	padding: 0 20px;
+	min-width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #fff;
+}
+div.default .sp-portfolio-loadmore .btn.hide,
+div.default .sp-portfolio-loadmore .btn .icon-spinner,
+div.default .sp-portfolio-loadmore .btn.loading span{
+	display: none;
+}
+
+div.default .sp-portfolio-loadmore .btn.loading .icon-spinner{
+	display: block;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+/*Isotope Animation*/
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+
+.rtl .isotope .isotope-item {
+  -webkit-transition-property: right, top, -webkit-transform, opacity;
+     -moz-transition-property: right, top, -moz-transform, opacity;
+      -ms-transition-property: right, top, -ms-transform, opacity;
+       -o-transition-property: right, top, -o-transform, opacity;
+          transition-property: right, top, transform, opacity;
+}

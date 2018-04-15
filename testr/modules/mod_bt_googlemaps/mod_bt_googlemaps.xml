@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension 
+	type="module" 
+	client="site"
+	 method="upgrade">
+	<name>BT Google Maps</name>
+    <author>BowThemes</author>
+	<creationDate>Jun 2012</creationDate>
+   <copyright>Copyright (C) 2016 Bowthemes. All rights reserved.</copyright>
+   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+   <authorEmail>support@bowthemes.com</authorEmail>
+   <authorUrl>http://www.bowthemes.com</authorUrl>
+	<version>2.1.2</version>
+	<description>
+	<![CDATA[
+		<div class="bt_description">
+			<h3>BT Google Maps Module Version 2.1.0</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_bt_googlemaps/admin/images/mod_bt_googlemaps.png"></a>
+			<p>Bring google maps to your website by the simplest & easiest way. Using Google Maps version 3 services, BT Google Maps support you input both Address and Coordinate, create your custom marker with title, images, description...
+			</p>
+			<br clear="both" />
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Google Maps Version 3 (Latest)</li>
+				<li>Support both input types: Address and Coordinate </li>
+				<li>Retrieving lat/long of location using Geocoder</li>
+				<li>Auto-Detect Language</li>
+				<li>Streetview, MapOverview, ZoomControl, PanControl, ScaleControl, MapTypeControl</li>
+				<li>Support Multiple Marker( Easy customize title, icon, description popup)</li>
+				<li>Weather & cloud layers</li>
+				<li>Support custom map style</li>
+				<li>Support custom inforwindow style</li>
+				<li>Multiple module instances</li>	
+				<li>The configuration is very easy and simple</li>				
+				<li>Compatibility with Joomla 1.6, 1.7, 2.5 & Joomla 3.x</li>
+				<li>Cross Browser Support: IE7+, Firefox 2+, Safari 3+, Chrome 8+, Opera 9+</li>
+			</ul>
+			<h3>Upgrade versions</h3>
+			<p>
+				Your current versions is 2.1.0. <a target="_blank" href="http://bowthemes.com/bt-google-map.html">Find our latest versions now</a>
+			</p>
+			<h3>Userful links</h3>
+			<ul>
+				<li><a target="_blank" href="http://bowthemes.com/bt-google-map.html">Video tutorials</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/27-bt-google-map-module/">Report bug</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/27-bt-google-map-module/">Forum support</a></li>
+			</ul>
+			<h3>About bow themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright (C) 2016 BowThemes	
+
+		</div>
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 5px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				list-style: none outside none;
+				padding: 5px 5px 5px 20px;				
+			}
+			
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_bt_googlemaps/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+	]]>	
+	</description>
+	<files>
+		<filename module="mod_bt_googlemaps">mod_bt_googlemaps.php</filename>
+		<filename module="mod_bt_googlemaps">helper.php</filename>
+		<filename module="mod_bt_googlemaps">index.html</filename>
+		<folder module="mod_bt_googlemaps">tmpl</folder>
+		<folder module="mod_bt_googlemaps">admin</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_bt_googlemaps.ini</language>
+	</languages>
+	<config>
+		<fields name="params">			
+			<fieldset name="basic">	
+				<field 
+					name="mapType" 
+					type="list" 
+					default="roadmap"
+					label="MOD_BT_GOOGLEMAPS_MAP_TYPE" description="MOD_BT_GOOGLEMAPS_MAP_TYPE_DESC">
+					<option value="hybrid">Hybrid</option>
+					<option value="roadmap">Roadmap</option>
+					<option value="satellite">Satellite</option>
+					<option value="terrain">Terrain</option>
+				</field>
+				<field name="mapCenterType" type="radio" default="address" class="btn-group" label="MOD_BT_GOOGLEMAPS_MAPCENTER_TYPE_LABEL" description="MOD_BT_GOOGLEMAPS_MAPCENTER_TYPE_DESC">
+					<option value="address">Address</option>
+					<option value="coordinate">Coordinate</option>
+				</field>
+				<field name="mapCenterAddress" default="New York, United States" type="text" label="MOD_BT_GOOGLEMAPS_MAPCENTER_ADDRESS_LABEL" description="MOD_BT_GOOGLEMAPS_MAPCENTER_ADDRESS_DESC"></field>
+				<field name="mapCenterCoordinate" default="40.7143528, -74.0059731" type="text" label="MOD_BT_GOOGLEMAPS_MAPCENTER_COORDINATE_LABEL" description="MOD_BT_GOOGLEMAPS_MAPCENTER_COORDINATE_DESC"></field>
+				<field
+					name="width"
+					type="text"
+					default="auto"
+					label="MOD_BT_GOOGLEMAPS_WIDTH"
+					description="MOD_BT_GOOGLEMAPS_WIDTH_DESC">
+				</field>
+				<field
+					name="height"
+					type="text"
+					default="350"
+					label="MOD_BT_GOOGLEMAPS_HEIGHT"
+					description="MOD_BT_GOOGLEMAPS_HEIGHT_DESC">
+				</field>
+				<field
+					name="zoom"
+					type="text"
+					default="13"
+					label="MOD_BT_GOOGLEMAPS_ZOOM"
+					description="MOD_BT_GOOGLEMAPS_ZOOM_DESC">
+				</field>
+				<field
+					name="zoomControl"
+					type="radio"
+					class="btn-group"
+					default="true"
+					label="MOD_BT_GOOGLEMAPS_ZOOMCONTROL"
+					description="MOD_BT_GOOGLEMAPS_ZOOMCONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="panControl"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_PANCONTROL"
+					description="MOD_BT_GOOGLEMAPS_PANCONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="mapTypeControl"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_MAPTYPECONTROL"
+					description="MOD_BT_GOOGLEMAPS_MAPTYPECONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="scaleControl"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_SCALECONTROL"
+					description="MOD_BT_GOOGLEMAPS_SCALECONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="overviewMapControl"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_OVERVIEWCONTROL"
+					description="MOD_BT_GOOGLEMAPS_OVERVIEWCONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="streetViewControl"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_STREETVIEWCONTROL"
+					description="MOD_BT_GOOGLEMAPS_STREETVIEWCONTROL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="draggable"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_DRAGGABLE"
+					description="MOD_BT_GOOGLEMAPS_DRAGGABLE_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="disableDoubleClickZoom"
+					type="radio"
+					default="false"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_DISABLEDOUBLECLICKZOOM"
+					description="MOD_BT_GOOGLEMAPS_DISABLEDOUBLECLICKZOOM_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="scrollwheel"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_GOOGLEMAPS_SCROLLWHEEL"
+					description="MOD_BT_GOOGLEMAPS_SCROLLWHEEL_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field name="enable_map_api" default="1" type="radio" class="btn-group bt_group"
+					   label="MOD_BT_GOOGLEMAPS_ENABLE_MAP_API"
+					   description="MOD_BT_GOOGLEMAPS_ENABLE_MAP_API_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+					name="map_api"
+					type="text"
+					class="enable_map_api"
+					default=""
+					label="MOD_BT_GOOGLEMAPS_API"
+					description="MOD_BT_GOOGLEMAPS_API_DESC">
+				</field>
+			</fieldset>
+			<fieldset name="markers-manager" label="MARKERS_MANAGER" addfieldpath="/modules/mod_bt_googlemaps/admin/formfield">	
+				<field  type="markers" name="markes" label="BTG_MARKERS_LABEL" description="BTG_MARKERS_DESC"/>
+			</fieldset>
+			<fieldset name="weather_cloud" label="MOD_BT_GOOGLEMAPS_WEATHER_CLOUD">	
+				<field 
+					name="weather" 
+					type="radio" 
+					default="0" 
+					class="btn-group bt_group"
+					label="MOD_BT_GOOGLEMAPS_SHOW_WEATHER" 
+					description="MOD_BT_GOOGLEMAPS_SHOW_WEATHER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="owm_api" type="text"
+					   label="MOD_BT_GOOGLEMAPS_OPEN_WEATHER_MAP_API" description="MOD_BT_GOOGLEMAPS_OPEN_WEATHER_MAP_API_DESC"/>
+				<field 
+					name="temperatureUnit" 
+					type="radio" 
+					default="f" 
+					class="weather btn-group"
+					label="MOD_BT_GOOGLEMAPS_TEMPERATUREUNIT" 
+					description="MOD_BT_GOOGLEMAPS_TEMPERATUREUNIT_DESC">
+					<option value="f">FAHRENHEIT</option>
+					<option value="c">CELSIUS</option>
+				</field>
+				<field name="replace_marker_icon" default="1" type="radio" class="weather btn-group"
+					   label="MOD_BT_GOOGLEMAPS_REPLACE_MARKER_ICON"
+					   description="MOD_BT_GOOGLEMAPS_REPLACE_MARKER_ICON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="display_weather_info" default="1" type="radio" class="weather btn-group"
+					   label="MOD_BT_GOOGLEMAPS_DISPLAY_WEATHER_INFO"
+					   description="MOD_BT_GOOGLEMAPS_DISPLAY_WEATHER_INFO_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+			<fieldset name="styles-manager" label="STYLES_MANAGER" addfieldpath="/modules/mod_bt_googlemaps/admin/formfield">
+				<field name="enable-style" type="radio" default="0" class="btn-group" label="MOD_BT_GOOGLEMAPS_ENABLE_STYLE_LABEL" description="MOD_BT_GOOGLEMAPS_ENABLE_STYLE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="style-title" default="BT Map" type="text" label="MOD_BT_GOOGLEMAPS_STYLE_TITLE_LABEL" description="MOD_BT_GOOGLEMAPS_STYLE_TITLE_DESC"/>
+				<field name="createNewOrApplyDefaultStyle" type="radio" class="btn-group" default="createNew" label="MOD_BT_GOOGLEMAPS_CREATE_NEW_OR_DEFAULT_STYLE_LABEL" description="MOD_BT_GOOGLEMAPS_CREATE_NEW_OR_DEFAULT_STYLE_DESC">
+					<option value="createNew">MOD_BT_GOOGLEMAPS_CREATE_NEW</option>
+					<option value="applyDefault">MOD_BT_GOOGLEMAPS_APPLY_DEFAULT</option>
+				</field>
+				<field type="styles"  name="styles" label="BTG_STYLES_LABEL" description="BTG_STYLES_DESC" />
+			</fieldset>
+			<fieldset name="custom-infobox" label="CUSTOM_INFOBOX">
+				<field name="enable-custom-infobox" type="radio" default="0" class="bt_group  btn-group" label="BTG_ENABLE_CUSTOM_INFORBOX_LABEL" description="BTG_ENABLE_CUSTOM_INFORBOX_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="textarea" rows="10" cols="30"  class="option-custom-infobox" default="background :#ffffff,&#13;&#10;opacity : 0.85,&#13;&#10;width : 280px,&#13;&#10;height :100px,&#13;&#10;border : 1px solid grey,&#13;&#10;borderRadius:3px,&#13;&#10;padding : 10px,&#13;&#10;boxShadow:30px 10px 10px 1px grey"  name="boxcss" label="BTG_BOXCSS_LABEL" description="BTG_BOXCSS_DESC" />
+				<field type="text" default="-150,-155"  name="pixelOffset" class="option-custom-infobox" label="BTG_BOX_OFFSET_LABEL" description="BTG_BOX_OFFSET_DESC" />
+				<field type="text" default="-9px"  name="closeBoxMargin" class="option-custom-infobox" label="closeButton  Margin" description="closeButton Margin" />
+				<field type="media" name="closeBoxURL" default="" label="closeButton image" description="closeButton image" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					class="btn-group"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+					<field addfieldpath="/modules/mod_bt_googlemaps/admin/formfield" type="asset" name="asset" path="modules/mod_bt_googlemaps/admin/" />
+			</fieldset>
+	
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,559 @@
+.pane-sliders .panel { 
+	border: none !important; 
+	font-family:arial;	
+}
+.pane-sliders .panel > h3 {
+	background:url(../images/header-bg.gif) repeat-x!important;
+	height:37px;
+	line-height:37px;
+	padding:0;
+}
+.pane-sliders .panel h3 span{
+	text-transform:uppercase;
+	color:#c16306;
+}
+
+.pane-toggler-down {
+	border-bottom:none!important;
+}
+.pane-toggler-down span {
+    background: url("../images/arrow-down.gif") no-repeat scroll 8px 50% transparent!important;
+    padding-left: 26px!important;
+}
+.pane-toggler span {
+    background: url("../images/arrow-up.gif") no-repeat scroll 10px 50% transparent!important;
+    padding-left: 26px!important;
+}
+.pane-sliders .panel{
+	border:1px solid #cacaca!important;
+	border-top:1px solid #da710a!important;
+	border-radius:5px 5px 5px 5px;
+	padding:0 1px;
+
+}
+fieldset.panelform{
+	padding:10px!important;
+}
+fieldset.panelform li > label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label {
+    max-width: 30% !important;
+    min-width: 21% !important;
+}
+fieldset.panelform .spacer h3{
+	padding-top:5px;
+	margin:0px;
+	background:#fff!important;
+}
+#jform_params_about-lbl{
+	display:none;
+}
+.panel fieldset.panelform > ul > li > label {
+    color: #505050;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 30% !important;
+    min-width: 30% !important;
+    text-align: left;
+}
+#module-sliders fieldset > ul > li > label {
+    color: #505050;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    max-width: 30% !important;
+    min-width: 30% !important;
+    text-align: left;
+}
+.fltrt ul.adminformlist li {
+    border-bottom: 1px dotted  #c4c4c4;
+	min-height:35px;
+	padding:0px;
+	margin:5px;
+}
+
+/* Fix chosen*/
+.chzn-container  ul.chzn-results{
+	min-width:95%;
+}
+
+.fltrt ul.adminformlist li  li{
+    border-bottom: none;
+	min-height:0;
+	
+	padding: 7px 7px 8px;
+	margin: 0;
+	list-style: none;
+}
+
+fieldset.adminform fieldset.radio, fieldset.panelform fieldset.radio, fieldset.adminform-legacy fieldset.radio {
+    border: 0 none;
+    float: left;
+    margin: 0 0 5px;
+	max-width: 68% !important;
+    min-width: 68% !important;
+    padding: 0;
+}
+fieldset.panelform input[type=text],fieldset.panelform textarea {
+    background:-moz-linear-gradient(center bottom , white 85%, #EEEEEE 99%) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    font-family: sans-serif;
+	font-size:11px;
+    margin: 1px 0;
+    outline: 0 none;
+    padding: 6px 20px 6px 5px;
+	border-radius: 4px 4px 4px 4px;
+}
+#module-sliders input[type="text"], #module-sliders textarea {
+    background: -moz-linear-gradient(center bottom , white 85%, #EEEEEE 99%) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px 4px 4px 4px;
+    font-family: sans-serif;
+    font-size: 11px;
+    margin: 1px 0;
+    outline: 0 none;
+    padding: 6px 20px 6px 5px;
+}
+.bt-desc{
+	line-height:200%;	
+}
+.bt-desc img{
+	margin-right:10px;
+}
+.bt-license{
+	border-top: 1px dotted  #c4c4c4;
+	padding:10px 0px;
+}
+.bt-desc p a{
+	display: inline-block;
+    height: 28px;
+    margin-right: 7px;
+    text-indent: -999px;
+    width: 28px;
+	text-decoration:none;
+	margin-top:10px;
+}
+.social-f {
+    background: url("../images/icon_f.png") no-repeat scroll left top transparent;
+}
+.social-f:hover {
+    background: url("../images/icon_f_hover.png") no-repeat scroll left top transparent;
+}
+.social-t {
+    background: url("../images/icon_t.png") no-repeat scroll left top transparent;
+}
+.social-t:hover {
+    background: url("../images/icon_t_hover.png") no-repeat scroll left top transparent;
+}
+.social-rss {
+    background: url("../images/icon_rss.png") no-repeat scroll left top transparent;
+}
+.social-rss:hover {
+    background: url("../images/icon_rss_hover.png") no-repeat scroll left top transparent;
+}
+.social-g {
+    background: url("../images/icon_group.png") no-repeat scroll left top transparent;
+}
+.social-g:hover {
+    background: url("../images/icon_group_hover.png") no-repeat scroll left top transparent;
+}
+
+.switcher-yes,.switcher-no  {
+    background: url("../images/switcher-yesno.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-top: 4px;
+    width: 64px;
+}
+.switcher-no {
+    background-position: 0 -20px;
+}
+.switcher-on,.switcher-off  {
+    background: url("../images/switcher-onoff.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-top: 4px;
+    width: 64px;
+}
+.switcher-off {
+    background-position: 0 -20px;
+}
+
+/* marker style */
+
+/*Chinhpv style*/
+.marker-title-label-hide{
+display: none;	
+}
+#bt-makers > li {list-style: none;}
+#btg-dialog #btg-form-marker  .btg-dialog-container > li, #btg-main-button,
+#btg-style-main-button,  #btg-style-dialog #btg-form-style  .btg-style-dialog-container > li{
+	min-height: 35px;	
+	list-style: none;
+}
+#btg-dialog .btg-dialog-container > li,#btg-style-dialog .btg-style-dialog-container > li{
+	padding: 3px 7px;
+	min-height:30px!important;
+}
+
+#btg-submit-btn{
+padding-left: 29%;	
+}
+#marker-form{
+width:100%;	
+}
+#btg-dialog,#btg-style-dialog{
+    padding: 10px 0 10px 0px;
+ 	border: 1px solid #E4E4E4;
+ 	border-radius: 5px;
+ 	margin-bottom: 10px;
+ 	width: 100%;
+	background:#F5F5F5;
+}
+ul.btg-dialog-container ul.btg-style-dialog-container{
+    padding:0 15px;
+    list-style: none;
+}
+ul.btg-dialog-container > li ,ul.btg-style-dialog-container > li {
+    min-height: 35px;
+}
+.btg-icon-marker{
+	width:100%!important;
+}
+ul.btg-dialog-container li label,ul.btg-style-dialog-container li label{
+    color: #505050;
+    font-size: 11px;
+    font-weight: bold;
+    width: 120px;
+    display: block;
+    text-align: left;
+    float: left;
+}
+.img-marker{
+	max-height: 25px;
+	max-width: 100px;	
+	
+}
+.marker-icon .img-marker{
+	margin-left: 68px;	
+}
+
+ul.btg-dialog-container li select{
+    width: 180px;
+}
+#btg-message{
+    padding: 0 15px;
+}
+#btg-messages .error{
+    color: #f20000;
+    background: url(../images/error.png) left center no-repeat;
+}
+#btg-messages .success{
+    background: url(../images/success.png) left center no-repeat;
+    color: #69a101;
+
+}
+#btg-messages .bt-message{
+    line-height: 20px;
+    font-size: 11px;
+    padding: 2px 12px;
+    margin: 2px;
+    
+}
+ul.btg-dialog-container input.error{
+    border-color: #f20000;
+
+}
+
+.adminformlist .marker-display,.style-display{
+	margin:0;
+	padding:0;
+}
+
+
+#btnCreateMarker, #btnUpdateMarker, #btnCancel, #btnAddMarker,#btnDeleteAll,
+#btnCreateStyle, #btnUpdateStyle, #btnCancelStyle, #btnAddStyle,#btnDeleteAllStyle{
+    background: url(../images/button.png) center center no-repeat;
+	background-size:100% 100%;
+    width: 100px;
+    height: 30px;
+	line-height: 30px;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    margin-top: 0px !important;
+    float: left;
+	cursor:pointer;
+	font-size:13px;
+}
+
+.btg-head, .btg-style-head{
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    color: #969696;
+    text-align: center;
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 28px;
+    font-weight: bold;
+
+}
+.btpreview_edit, .btpreview_remove{
+    width: 25px; height: 25px;
+    float: right;
+    margin-left: 3px;
+}
+.btpreview_edit{
+    background: url(../images/btpreview_edit.png) no-repeat;
+}
+.btpreview_edit:hover{
+    background: url(../images/btpreview_edit_hovered.png) no-repeat;
+}
+.btpreview_remove{
+    background: url(../images/btpreview_remove.png) no-repeat;
+}
+.btpreview_remove:hover{
+    background: url(../images/btpreview_remove_hovered.png) no-repeat;
+}
+#btg-warning li{
+    color: #fc0000;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.marker-icon{
+	min-height: 35px;
+	line-height: 35px;
+}
+.marker-infowindow{
+	min-height: 20px;	
+}
+	
+
+/* end Chinhpv style*/
+.marker-display .title,.option-display .title{padding:0!important;cursor:text;}
+.marker-title-label, .option-title-label, .style-title-label {
+    font-weight: normal;
+    line-height: 20px;
+    
+}
+.marker-display, .option-display, .style-display{
+	background: url("../images/bg-li-infor-bttab.png") repeat-x left bottom #fff;
+	border: 1px solid #e4e4e4 !important;
+	margin: 10px 0 !important;
+	position:relative;
+}
+
+.marker-title-label span.label,.option-title-label span.label ,.style-title-label span.label,.option-title-label span.label {
+    color: #C36305;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+	text-shadow:none;
+}
+
+.marker-title-label span.value,.option-title-label span.value,.style-title-label span.value,.option-title-label span.value {
+    color: #000;
+    font-size: 11px;
+}
+.marker-title-label span.value
+{
+color: #C36305;
+font-size: 13px;
+font-weight: bold;
+
+}
+
+#bt-addMarker, #bt-delallMarker,#bt-addOption, #bt-delall {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.bt-button,.bt-button:hover{
+    background: url("../images/button.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    height: 35px;
+    line-height: 33px;
+    margin-top: 0 !important;
+    text-align: center;
+    width: 110px;
+}
+
+.option-display .edit-remove-link {
+    position: absolute;
+    right: 10px;
+    top:20px;
+}
+ .style-display .edit-remove-link{
+    position: absolute;
+    right: 10px;
+    top:15px;
+}
+.marker-display .edit-remove-link{
+    position: absolute;
+    right: 10px;
+    top:5px;
+}
+.marker-display .edit-remove-link a{
+ float: left;
+ margin-right: 5px;	
+}
+.edit-remove-link a {
+    display: block;
+    height: 25px;
+    text-indent: -9999px;
+    width: 26px;
+    float:left;
+    margin-right: 5px;
+}
+.edit-remove-link a.edit {
+    background: url("../images/bg-li-tab-a-edit.png") no-repeat scroll left -32px transparent;
+    margin-bottom: 10px;
+}
+
+.edit-remove-link a.edit:hover {
+    background: url("../images/bg-li-tab-a-edit.png") no-repeat scroll left top transparent;
+}
+.edit-remove-link a.remove {
+    background: url("../images/bg-li-tab-a-delete.png") no-repeat scroll left -32px transparent;
+}
+
+.edit-remove-link a.remove:hover {
+    background: url("../images/bg-li-tab-a-delete.png") no-repeat scroll left top transparent;
+}
+.bt-button:hover{
+
+    border: none;
+
+}
+.marker-display .image img{
+	float:none;
+	margin:0;
+	width:70px;
+}
+.hasEmptyImg{
+	display:none;
+}
+
+.btg-infowindow{
+	min-height: 80px!important;
+}
+#btg-infowindow{
+	width: 270px;
+	height: 80px;
+	margin-right: 10px;
+}
+/* style for Custom Styles */
+.style-stylers-label{
+	color: #C36305;
+	font-size: 12px;
+	 font-weight: bold;	
+	 display:none;
+}
+
+.style-stylers{
+	background: none repeat scroll 0 0 #FFFFFF;
+    color: #FFFFFF;
+    height: 80px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    display: none;
+}
+.style-stylers span.label{
+	font-size: 11px;
+}
+.style-stylers span.value{
+ font-size: 10px;
+ 
+}
+.style-styler > span{
+ width: 300px; 
+}
+.style-stylers-element{
+ float:left;
+  width: 150px;
+}
+/*end style for Custom Styles*/
+
+/* =================for Joomla 3.0 =================*/
+
+	/*for marker*/
+#options-markers-manager > div > div.controls{
+	margin-left: 0!important;
+	display: inline-block;
+	min-width: 380px;
+}
+#options-markers-manager > div > div.controls  ul > li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+#options-markers-manager > div > div.controls #btg-main-button {
+	text-align: center;
+}
+#options-markers-manager > div > div.controls #btg-main-button button{
+	float:none;	
+}
+#options-markers-manager > div > div.controls #btg-markers-container{
+	margin: 0;	
+}
+#options-markers-manager > div > div.controls #btg-markers-container li{
+	min-height: 20px;
+	padding:10px;
+}
+.btg-icon-marker .fltlft , .btg-shadow-marker .fltlft{
+	float: left;	
+}
+
+#btg-icon_preview_empty{
+	display:none!important;
+}
+/*end for marker*/
+	
+/* for style*/
+.controls #btg-style li{
+	list-style: none;
+}
+.controls #btg-style li{
+	margin-bottom: 10px;
+}
+.controls #btg-style-main-button{
+	text-align: center;
+}
+.controls #btg-style-main-button button{
+	float:none;	
+}
+.controls #btg-styles-container{
+	margin: 0;
+}
+.controls #btg-styles-container li{
+ padding: 10px;	
+}
+.controls #btg-styles-container li .label{
+		background: none;
+		float: none;
+}
+
+
+/* end for style*/
+/*=======================End for Joomla 3.0=============================*/
+
+/* fix amm component */
+.assignment-options li{
+	height:auto!important;border:none!important;min-height:auto!important;line-height:120%!important;
+}
+#permissions-sliders h3{
+	height:auto;
+	line-height:100%;
+	padding:2px;
+	background:none!important;
+}
+#style-form,#marker-form{
+	padding-top:0;
+	padding-bottom:0;
+	width:auto;
+}

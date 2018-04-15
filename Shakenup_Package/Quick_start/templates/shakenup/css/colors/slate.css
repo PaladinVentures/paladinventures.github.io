@@ -1,0 +1,167 @@
+/*
+* @package Shakenup
+* @copyright (C) 2017 by Joomlastars - All rights reserved!
+* @license GNU General Public License, version 2 (http://www.gnu.org/licenses/gpl-2.0.html)
+* @author Joomlastars <author@joomlastars.co.in>
+* @authorurl <http://themeforest.net/user/joomlastars>
+*/
+
+#blog-post-title h4
+{
+	color: #6b798f;
+}
+	
+#blog-post-title .dot
+{
+	background-color: #6b798f;
+}
+.blog-post-date h5
+{
+	color: #6b798f;
+}
+.blog-post-date .blog-item-square
+{
+	background-color: #6b798f;
+}
+.blog-post-separator-big
+{
+	background-color: #6b798f;
+}
+.blog-post-separator-small
+{
+	background-color: #6b798f;
+}
+.comment-avatar
+{
+	background-color: #6b798f;
+}
+#content-wrapper li a
+{
+	color: #6b798f;
+}
+@media screen and (max-width: 992px)
+{
+#header-menu li:hover > a, #navigation-menu li:hover > a
+	{
+		background-color: #6b798f;
+	}
+}
+#progress-bar-fill
+{
+	background-color: #6b798f;
+}
+.header-link:hover
+{
+	color: #6b798f !important;
+}
+#header-slidernav-page
+{
+	background-color: #6b798f;
+	color: #6b798f;
+}
+.header-slidernav-arrow
+{
+	color: #6b798f;
+}
+.header-slidernav-arrow:hover
+{
+	background-color: #6b798f;
+}
+#navigation-menu > li > a
+{
+	color: #6b798f;
+}
+.separator-small
+{
+	background-color: #6b798f;
+}
+#portfolio-full-item-navigation i
+{
+	color: #6b798f;
+}
+.item-separator
+{
+	background-color: #6b798f;
+}
+.load-more-button, .filter-button
+{
+	border: 1px solid #6b798f;
+}
+.load-more-button, .filter-button
+{
+	color: #6b798f;
+}
+.load-more-button:hover, .filter-button:hover
+{
+	background-color: #6b798f;
+}
+.team-item h4
+{
+	color: #6b798f;
+}
+.team-item h5
+{
+	color: #6b798f;
+
+}
+.team-item-icons a
+{
+	color: #6b798f;
+}
+.team-item-icons a:hover
+{
+	background-color: #6b798f;
+}
+.services-item-inner
+{
+	color: #6b798f;
+}
+#showcase-wrapper .load-more-button:hover
+{
+	color: #6b798f;
+}
+input:not([type="submit"]), textarea
+{
+	color: #6b798f;
+}
+input:not([type="submit"]), textarea
+{
+    color: #6b798f;
+}
+input:not([type="submit"]):focus, textarea:focus
+{
+	border-color: #6b798f;
+}
+#footer-wrapper
+{
+	background-color: #6b798f;
+}
+#footer-social a
+{
+	background: #6b798f;
+}
+#footer-social a:hover
+{
+	color: #6b798f;
+}
+.transparent-frame
+{
+	background: #6b798f;
+}
+.button-active
+{
+	background-color: #6b798f;
+	color:#fff;
+}
+#scrollToTop:hover {
+    background: none repeat scroll 0 0 #6b798f!important;
+}
+#style-selector a.close {
+   background-color: #6b798f;
+}
+.testimonials-item h4 {
+    color: #fff;
+}
+#footer-wrapper p, #header-slidernav-total {
+    color: #fff;
+}

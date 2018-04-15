@@ -1,0 +1,67 @@
+.itp-socialbuttons-mod {
+  width: 100%;
+  display:block;
+  overflow:hidden;
+  clear:both;
+}
+
+.itp-socialbuttons-mod h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.itp-sbb-nl{
+  border-top: none;
+  border-bottom: none;
+  
+}
+
+.itp-sbb-tl{
+  border-top: thin solid #808080;
+  border-bottom: none;
+  padding-top: 5px;
+}
+
+.itp-sbb-bl{
+    border-top: none;
+  border-bottom: thin solid #808080;
+  padding-bottom:5px;
+  overflow:hidden;
+}
+
+.itp-sbb-bothl{
+  border-top: thin solid #808080;
+  border-bottom: thin solid #808080;
+  padding-top: 5px;
+  padding-bottom:5px;
+  overflow:hidden;
+}
+
+.itp-sb-left{
+	text-align:left;
+}
+
+.itp-sb-left a{
+	border:0 !important;
+	margin-right: 5px;
+}
+
+.itp-sb-right{
+    text-align:right;
+}
+
+.itp-sb-right a{
+	border:0 !important;
+	margin-left: 5px;
+}
+
+.itp-sb-center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center !important;
+}
+
+.itp-sb-center a{
+	border:0 !important;
+	margin-left: 5px;
+}

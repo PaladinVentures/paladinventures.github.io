@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>SP Portfolio</name>
+	<author>JoomShaper.com</author>
+	<creationDate>Jul 2013</creationDate>
+	<copyright>Copyright (C) 2010 - 2013 JoomShaper.com. All rights reserved.</copyright>
+	<license>GNU/GPL V2 or later</license>
+	<authorEmail>support@joomshaper.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>1.3</version>
+	<description>Portfolio moudue for Joomla</description>
+	<files>
+		<filename module="mod_sp_portfolio">mod_sp_portfolio.php</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_sp_portfolio.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC">	
+				<field name="catid" type="category" extension="com_content" default="" label="CATEGORY" description="CATEGORY_DESC" />
+				<field name="limit" type="text" default="1" label="COUNT" description="COUNT_DESC" />
+				<field name="orderby" type="list" default="a.created" label="ORDER" description="ORDER_DESC">
+					<option value="a.ordering">JOOMLA_ORDERING</option>
+					<option value="a.publish_up">PUBLISHED_UP</option>
+					<option value="a.hits">HITS</option>
+					<option value="a.title">TITLE</option>
+					<option value="a.id">ID</option>
+					<option value="a.alias">ALIAS</option>
+					<option value="a.created">CREATED</option>
+					<option value="a.modified">MODIFIED</option>
+				</field>
+				<field name="ordering" type="list" default="DESC" label="ORDERING_FILTER" description="ORDERING_FILTER_DESC">
+					<option value="DESC">FILTER_DESC</option>
+					<option value="ASC">FILTER_ASC</option>
+				</field>
+				<field name="show_featured" type="list" default="" label="FEATURED" description="FEATURED_DESC">
+					<option value="">JSHOW</option>
+					<option value="0">JHIDE</option>
+					<option value="1">ONLY_SHOW_FEATURED</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="LAYOUT">
+				<field name="module_layout" type="list" default="default" label="MODULE_LAYOUT" description="MODULE_LAYOUT_DESC" class="btn-group">
+					<option value="default">Default</option>
+					<option value="maxima">Maxima</option>
+					<option value="appico">Appico</option>
+					<option value="blog">Blog</option>
+					<option value="blogmasonry">blogmasonry</option>
+					<option value="portfoliowrapper">portfoliowrapper</option>
+				</field>			
+				<!--Advanced-->
+
+				<field name="ajax_loader" type="radio" default="1" label="AJAX_LOADER" description="AJAX_LOADER_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+
+				<field name="show_filter" type="radio" default="1" label="SHOW_FILTER" description="SHOW_FILTER_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>			
+				
+				<field name="load_jquery" type="radio" default="1" label="LOAD_JQUERY" description="LOAD_JQUERY_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>			
+
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Footer Information</name>
+    <version>1.0</version>
+	<creationDate>July 2014</creationDate>
+	<author>Joomlastars</author>
+	<authorEmail>stars.joomla@gmail.org</authorEmail>
+	<copyright>copyright (C) 2014 by Joomlastars - All rights reserved!</copyright>
+    <description>A simple Footer Module</description>
+    <files>
+        <filename>mod_jsfooter.xml</filename>
+        <filename module="mod_jsfooter">mod_jsfooter.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>
