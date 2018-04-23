@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Paladin Ventures
 # email: your-email@domain.com
-# description: >
-    # The Harvard Open Data Project is a student-faculty collaboration dedicated to opening and analyzing Harvard data to empower our community members to improve campus life.
+description: >
+    Paladin Ventures is the parent brand of several startup ventures founded by alumni of Cornell and Harvard University. These ventures range from an education startup with a #1 bestselling book to a software development consultancy.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://harvard-open-data-project.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
