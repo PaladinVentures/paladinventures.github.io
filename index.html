@@ -82,7 +82,17 @@ layout: default
 
 
 
-            <section id="" class="clearfix">
+            <section id="team" class="clearfix">
+              <!-- TODO: make smooth scrolling work when you click in the header bar.
+              Need to fix something in scripts.js. -->
+              <h2>Team</h2>
+
+              <p class="showcase-subtitle black">
+                Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the following.
+              </p>
+
+              <div class="separator-small"></div>
+
               {% for company in site.data.team_companies %}
                 <div class="clients-item col-2" data-scroll-reveal="">
                   <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />

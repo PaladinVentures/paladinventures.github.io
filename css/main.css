@@ -49,5 +49,9 @@
 }
 
 .clients-item {
-  padding: 1rem; 
+  padding: 1rem;
+}
+
+.black {
+  color: #000;
 }
