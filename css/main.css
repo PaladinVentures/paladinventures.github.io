@@ -34,16 +34,16 @@
 }
 
 #header-image-1 {
-  background: url(./template/images/slideshow/header-back.jpg) no-repeat #000000 !important;
+  background: url(../images/slideshow/header-back.jpg) no-repeat #000000 !important;
   background-size: cover !important;
 }
 
 #header-image-2 {
-  background: url(./template/images/slideshow/header-back2.jpg) no-repeat #000000 !important;
+  background: url(../images/slideshow/header-back2.jpg) no-repeat #000000 !important;
   background-size: cover !important;
 }
 
 #header-image-3 {
-  background: url(./template/images/slideshow/header-back3.jpg) no-repeat #000000 !important;
+  background: url(../images/slideshow/header-back3.jpg) no-repeat #000000 !important;
   background-size: cover !important;
 }
