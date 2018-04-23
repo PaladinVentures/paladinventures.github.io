@@ -729,7 +729,7 @@
     // EDIT BY @HATHIX: STOP THE SLIDESHOW... IMAGES SHOULD BE STATIC
     // var translateX = -headerIndex * $('#header-wrapper').width() + 'px';
     //
-    // $('#header-slidernav-current').html(headerIndex + 1);
+    $('#header-slidernav-current').html(headerIndex);
     //
     // $('#header-slider').stop(true, true).transition({x: translateX}, 400, function() {
     // 	clearTimeout(headerTimeout);
