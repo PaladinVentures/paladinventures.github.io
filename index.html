@@ -83,12 +83,13 @@ layout: default
 
 
             <section id="" class="clearfix">
-              <p>
-                <!-- START: Articles Anywhere -->
-              </p>
-              <div class="clients-item col-2" data-scroll-reveal=""><img class="clients-background" src="./template/shakenup/images/clients/photo1.jpg" alt="" />
+              {% for company in site.data.team_companies %}
+                <div class="clients-item col-2" data-scroll-reveal="">
+                  <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
                 <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
-                <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /></div>
+                <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
+              </div>
+              {% endfor %}
             </section>
             <div class="separator-100"></div>
 

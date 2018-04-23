@@ -47,3 +47,7 @@
   background: url(../images/slideshow/header-back3.jpg) no-repeat #000000 !important;
   background-size: cover !important;
 }
+
+.clients-item {
+  padding: 1rem; 
+}
