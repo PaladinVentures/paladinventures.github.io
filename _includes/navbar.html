@@ -1,0 +1,9 @@
+{% for page in site.data.pages %}
+  <li>
+    <a href="{{ page.url }}" class="scroll">
+      <span>
+        {{ page.name | upcase }}
+      </span>
+    </a>
+  </li>
+{% endfor %}

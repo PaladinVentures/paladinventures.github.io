@@ -1,0 +1,12 @@
+- name: Home
+  url: \#home
+- name: About
+  url: \#about
+- name: Portfolio
+  url: \#portfolio
+- name: Team
+  url: \#team
+- name: Careers
+  url: careers.html
+- name: Contact
+  url: \#contact
