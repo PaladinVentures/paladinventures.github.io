@@ -1,7 +1,10 @@
+<!-- params: pg - a page from _data/pages
+    (not using `page` because that would clobber the
+    global `page` var) -->
 <li>
-  <a href="{{ page.url }}" class="scroll" data-slug="{{ page.slug }}">
+  <a href="{{ pg.url }}" class="scroll" data-slug="{{ pg.slug }}">
     <span>
-      {{ page.name | upcase }}
+      {{ pg.name | upcase }}
     </span>
   </a>
 </li>

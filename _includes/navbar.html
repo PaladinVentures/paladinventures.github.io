@@ -1,9 +1,9 @@
-{% if navbar_type == "careers" %}
-{% for page in site.data.pages.careers %}
-  {% include navbar_item.html %}
-{% endfor %}
+{% if page.navbar_type == "careers" %}
+  {% for pg in site.data.pages.careers %}
+    {% include navbar_item.html %}
+  {% endfor %}
 {% else %}
-  {% for page in site.data.pages.main %}
+    {% for pg in site.data.pages.main %}
     {% include navbar_item.html %}
   {% endfor %}
 {% endif %}
