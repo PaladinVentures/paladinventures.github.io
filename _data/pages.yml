@@ -25,6 +25,9 @@ careers:
   - name: Internships
     url: "#internships"
     slug: internships
+  - name: Business
+    url: "#business"
+    name: business
   - name: Apply
     url: "#apply"
     slug: apply

@@ -76,3 +76,17 @@
   width: 1170px;
   margin: 0 auto;
 }
+
+.content-text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.ulpadded {
+  padding-left: 2rem;
+  padding-right: 1rem;
+}

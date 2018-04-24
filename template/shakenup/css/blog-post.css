@@ -152,7 +152,7 @@
 
 .blog-post-text
 {
-	letter-spacing: 0.1em;	
+	letter-spacing: 0.1em;
 	color: #7a7a7a;
 	text-align: left;
 }
@@ -288,11 +288,12 @@
 
 #content-wrapper ul
 {
+	/* we already provide arrows for the lists */ 
 	list-style-type: none;
-	text-align: left;
+	/* text-align: left; */
 }
 
-#content-wrapper li
+#content-wrapper .list-item
 {
 	font-family: "novecento_sans_widemedium";
 	font-size: 10px;

@@ -412,7 +412,13 @@ a {
 
 #content-wrapper h2 {
   font-family: "Montserrat";
-  font-size: 24px;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+#content-wrapper h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
   letter-spacing: 0.1em;
 }
 
@@ -953,7 +959,7 @@ a {
 
 .showcase-title {
   font-family: "novecento_sans_wide_bookbold";
-  font-size: 12px !important;
+  font-size: 2rem !important;
   line-height: 36px;
   letter-spacing: 0.1em;
   color: #ffffff;
