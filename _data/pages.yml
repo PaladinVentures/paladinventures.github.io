@@ -1,18 +1,18 @@
 - name: Home
-  url: \#home
+  url: "#home"
   slug: home
 - name: About
-  url: \#about
+  url: "#about"
   slug: about
 - name: Portfolio
-  url: \#portfolio
+  url: "#portfolio"
   slug: portfolio
 - name: Team
-  url: \#team
+  url: "#team"
   slug: team
 - name: Careers
   url: careers.html
   slug: careers
 - name: Contact
-  url: \#contact
-  slug: contact 
+  url: "#contact"
+  slug: contact

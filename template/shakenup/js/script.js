@@ -62,7 +62,6 @@
     $(document).on('click', '#header-menu > li > a, #navigation-menu > li > a', function(e) {
       var stringValue = $(this).attr('href');
       if (stringValue.indexOf("#") != -1) {
-
         bodyHtml.animate({
           scrollTop: $(stringValue).offset().top - $('#navigation-wrapper').height() - 20
         }, 1500);

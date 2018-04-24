@@ -1,84 +1,79 @@
-jQuery.noConflict();
-jQuery(function(jQuery) {
-  jQuery(window).load(function() {
-    var $gallery = jQuery('.portfolio-items');
-    var jsnocont = jQuery.noConflict();
+$(window).load(function() {
+  var $gallery = $('.portfolio-items');
+
+  $gallery.isotope({
+    // options
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
+  });
+
+  $filter = $('.filter-wrapper');
+  $selectors = $filter.find('a');
+
+  $filter.find('a').click(function() {
+    var selector = $(this).attr('data-filter');
+
+    $selectors.removeClass('button-active');
+    $(this).addClass('button-active');
 
     $gallery.isotope({
-      // options
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-
+      filter: selector
     });
+    return false;
+  });
 
-    $filter = jQuery('.filter-wrapper');
-    $selectors = $filter.find('a');
+  var $currentURL = './index.html';
+  var $start = 9; // ajax start from last limit
+  var $limit = 3;
+  var $totalitem = 12;
 
-    $filter.find('a').click(function() {
-      var selector = jQuery(this).attr('data-filter');
+  $('a.port-more-button').on('click', function(e) {
 
-      $selectors.removeClass('button-active');
-      jQuery(this).addClass('button-active');
+    var $this = $(this);
+    $this.removeClass('done').addClass('loading');
+    $.get($currentURL, {
+      moduleID: 115,
+      start: $start,
+      limit: $limit
+    }, function(data) {
 
-      $gallery.isotope({
-        filter: selector
-      });
-      return false;
-    });
+      $start += $limit;
 
-    var $currentURL = './index.html';
-    var $start = 9; // ajax start from last limit
-    var $limit = 3;
-    var $totalitem = 12;
+      var $newItems = $(data);
+      $gallery.isotope('insert', $newItems);
 
-    jQuery('a.port-more-button').on('click', function(e) {
+      if ($totalitem <= $start) {
+        $this.removeClass('loading').addClass('hide');
 
-      var $this = jQuery(this);
-      $this.removeClass('done').addClass('loading');
-      jQuery.get($currentURL, {
-        moduleID: 115,
-        start: $start,
-        limit: $limit
-      }, function(data) {
-
-        $start += $limit;
-
-        var $newItems = jQuery(data);
-        $gallery.isotope('insert', $newItems);
-
-        if ($totalitem <= $start) {
-          $this.removeClass('loading').addClass('hide');
-
-          // AUTOLOAD CODE BLOCK (MAY BE CHANGED OR REMOVED)
-          if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
-            jQuery(function(jQuery) {
-              jQuery("a[rel^='lightbox']").slimbox({ /* Put custom options here */ }, null, function(el) {
-                return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
-              });
+        // AUTOLOAD CODE BLOCK (MAY BE CHANGED OR REMOVED)
+        if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
+          $(function($) {
+            $("a[rel^='lightbox']").slimbox({ /* Put custom options here */ }, null, function(el) {
+              return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
             });
-          }
-          ////
+          });
+        }
+        ////
 
-          return false;
-        } else {
-          $this.removeClass('loading').addClass('done');
-          ////
+        return false;
+      } else {
+        $this.removeClass('loading').addClass('done');
+        ////
 
-          // AUTOLOAD CODE BLOCK (MAY BE CHANGED OR REMOVED)
-          if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
-            jQuery(function(jQuery) {
-              jQuery("a[rel^='lightbox']").slimbox({ /* Put custom options here */ }, null, function(el) {
-                return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
-              });
+        // AUTOLOAD CODE BLOCK (MAY BE CHANGED OR REMOVED)
+        if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
+          $(function($) {
+            $("a[rel^='lightbox']").slimbox({ /* Put custom options here */ }, null, function(el) {
+              return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
             });
-          }
-
+          });
         }
 
-      });
+      }
 
-      return false;
     });
 
+    return false;
   });
+
 });
