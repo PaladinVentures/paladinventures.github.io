@@ -86,8 +86,9 @@ layout: default
       <div class="separator-100"></div>
       <!-- Content -->
 
-      <div id="about">
-        <section id="showcase-wrapper" class="clearfix" data-slug="about">
+
+      <section id="showcase-wrapper" class="clearfix" data-slug="about">
+        <div id="about">
           <p>
             <!-- START: Articles Anywhere -->
           </p>
@@ -107,12 +108,14 @@ layout: default
             <p>
               <!-- END: Articles Anywhere -->
             </p>
-        </section>
-        </div>
-        <div class="separator-100"></div>
+          </div>
+      </section>
 
+      <div class="separator-100"></div>
+
+
+      <section id="portfolio-wrapper" class="clearfix" data-slug="portfolio">
         <div id="portfolio">
-        <section id="portfolio-wrapper" class="clearfix" data-slug="portfolio">
           <h2>Portfolio</h2>
           <p class="section-subtitle">OUR PORTFOLIO VENTURES</p>
           <div class="separator-small"></div>
@@ -198,59 +201,59 @@ layout: default
           <script type="text/javascript" src="scripts/portfolio-gallery.js"></script>
 
           <br><br>
+        </div>
+      </section>
 
-        </section>
+      <section id="team" class="responsive-wrapper clearfix" data-slug="team">
+        <h2>Team</h2>
 
-          <section id="team" class="responsive-wrapper clearfix" data-slug="team">
-            <h2>Team</h2>
+        <br>
 
-            <br>
+        <p class="showcase-subtitle black">
+          Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the
+          following.
+        </p>
 
-            <p class="showcase-subtitle black">
-              Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the
-              following.
-            </p>
+        <div class="separator-small"></div>
+      </section>
 
-            <div class="separator-small"></div>
-          </section>
-
-          <section class="clearfix" data-slug="team">
-            {% for company in site.data.team_companies %}
-            <div class="clients-item col-2" data-scroll-reveal="">
-              <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
-              <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
-              <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
-            </div>
-            {% endfor %}
-          </section>
-          <div class="separator-100"></div>
-
-
+      <section class="clearfix" data-slug="team">
+        {% for company in site.data.team_companies %}
+        <div class="clients-item col-2" data-scroll-reveal="">
+          <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
+          <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
+          <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
+        </div>
+        {% endfor %}
+      </section>
+      <div class="separator-100"></div>
 
 
 
-          <!-- End Content -->
-
-          <!-- Footer Section -->
-          <div id="contact">
-            <div id="footer-wrapper" data-slug="contact">
 
 
-              <div id="footer-logo-wrapper">
-                <img id="footer-logo" src="images/paladin/brand/paladin-logo-light-draft.png" alt="">
-              </div>
+      <!-- End Content -->
 
-              <p>
-                Copyright &copy; 2018 Paladin Ventures.
-                <a href="mailto:contact@paladin.ventures"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/company/swipe-to-unlock/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/PaladinVentures"><i class="fa fa-github"></i></a>
-              </p>
+      <!-- Footer Section -->
 
-            </div>
+      <section id="footer-wrapper" data-slug="contact">
+        <div id="contact">
+
+          <div id="footer-logo-wrapper">
+            <img id="footer-logo" src="images/paladin/brand/paladin-logo-light-draft.png" alt="">
           </div>
 
-          <!-- End Footer Section -->
+          <p>
+            Copyright &copy; 2018 Paladin Ventures.
+            <a href="mailto:contact@paladin.ventures"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/swipe-to-unlock/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/PaladinVentures"><i class="fa fa-github"></i></a>
+          </p>
+        </div>
+      </section>
+
+
+      <!-- End Footer Section -->
       </div>
       <!-- End Container -->
 

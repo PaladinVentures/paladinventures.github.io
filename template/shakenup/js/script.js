@@ -172,7 +172,8 @@
       clearTimeout($.data(this, 'scrollTimer'));
       $.data(this, 'scrollTimer', setTimeout(function() {
         var currentMenuItem = checkMenuItem();
-        if (menuVisible == 1 && currentMenuItem != false) {
+        // console.log(currentMenuItem);
+        if (menuVisible == 1 && currentMenuItem) {
           $('#navigation-menu').find('a').each(function() {
             var $this = $(this);
 
@@ -806,7 +807,7 @@
     $('#content-wrapper').children('section')
       // .not('#parallax-numbers-wrapper, #learn-more-wrapper')
       .each(function() {
-        if ($(window).scrollTop() + navigationWrapper.height() + 30 >= $(this).offset().top && $(window).scrollTop() + navigationWrapper.height() <= $(this).offset().top + $(this).height())
+        if ($(window).scrollTop() + navigationWrapper.height() + 60 >= $(this).offset().top && $(window).scrollTop() + navigationWrapper.height() <= $(this).offset().top + $(this).height())
           menuItem = $(this);
       });
 

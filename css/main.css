@@ -65,3 +65,7 @@
   /* cool blue color */
   color: #25abe6 !important!
 }
+
+.portfolio-item {
+  padding: 1rem;
+}
