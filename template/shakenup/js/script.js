@@ -505,7 +505,7 @@
     });
 
     //Load more button behaviors
-    $(document).on('click', '#portfolio-wrapper .load-more-button', function(e) {
+    $(document).on('click', '#portfolio-wrapper .load-more-button_INACTIVE', function(e) {
       e.preventDefault();
 
       var $this = $(this);
@@ -526,7 +526,7 @@
         $this.css('display', 'none');
     });
 
-    $(document).on('click', '#learn-more-wrapper .load-more-button, #showcase-wrapper .load-more-button', function(e) {
+    $(document).on('click', '#learn-more-wrapper .load-more-button_INACTIVE, #showcase-wrapper .load-more-button_INACTIVE', function(e) {
       e.preventDefault();
 
       bodyHtml.animate({
