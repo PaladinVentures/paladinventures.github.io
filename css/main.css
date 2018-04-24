@@ -55,3 +55,7 @@
 .black {
   color: #000;
 }
+
+#footer-wrapper p .fa {
+  color: #7a7a7a !important;
+}

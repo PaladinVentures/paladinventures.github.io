@@ -8,7 +8,7 @@
 
 /*
 	TABLE OF CONTENTS
-	
+
 	1. General elements
 	2. Loading screen
 	3. Header with navigation menu
@@ -33,7 +33,7 @@
 /* GENERAL ELEMENTS */
 /* ---------------- */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form,
 label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
 {
 	margin: 0;
@@ -52,7 +52,7 @@ img
 	width: 100%;
 }
 
-a 
+a
 {
 	text-decoration: none;
 }
@@ -1013,7 +1013,8 @@ a
 	width: 100%;
 	height: 600px;
 	position: relative;
-	background: url('../images/showcase.jpg') no-repeat;
+	/* background: url('../images/showcase.jpg') no-repeat; */
+	background: #282828;
 }
 
 #showcase-inner
@@ -1523,7 +1524,7 @@ input:not([type="submit"]):focus, textarea:focus
 	border-color: #000000;
 }
 
-input:not([type="submit"])::-webkit-input-placeholder, textarea::-webkit-input-placeholder 
+input:not([type="submit"])::-webkit-input-placeholder, textarea::-webkit-input-placeholder
 {
 	font-family: "novecento_sans_wide_bookbold";
     color: #7a7a7a;
@@ -1531,7 +1532,7 @@ input:not([type="submit"])::-webkit-input-placeholder, textarea::-webkit-input-p
     letter-spacing: 0.2em;
 }
 
-input:not([type="submit"]):-moz-placeholder, textarea:-moz-placeholder 
+input:not([type="submit"]):-moz-placeholder, textarea:-moz-placeholder
 {
 	font-family: "novecento_sans_wide_bookbold";
     color: #7a7a7a;
@@ -1839,7 +1840,7 @@ input:not([type="submit"]):-ms-input-placeholder, textarea:-ms-input-placeholder
 .loading-img
  {
 	 width:auto!important;
- } 
+ }
 #scrollToTop:hover {
     background: none repeat scroll 0 0 #000000!important;
     color: #ffffff;
@@ -1898,7 +1899,7 @@ input:not([type="submit"]):-ms-input-placeholder, textarea:-ms-input-placeholder
  }
 #searchForm .col-4 {
     text-align: left;
-    width: 33.33%; 
+    width: 33.33%;
 }
 #searchForm .col-8 {
 	width: 66.67%;
