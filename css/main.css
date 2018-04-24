@@ -59,3 +59,9 @@
 #footer-wrapper p .fa {
   color: #7a7a7a !important;
 }
+
+
+.stylish-link, .stylish-link:link, .stylish-link:visited {
+  /* cool blue color */
+  color: #25abe6 !important!
+}
