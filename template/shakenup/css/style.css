@@ -499,7 +499,7 @@ a
 	text-align: center;
 	width: 100%;
 	margin-bottom: 30px;
-	font-size: 14px;
+	font-size: 1.2rem;
 	letter-spacing: 0.1em;
 }
 
@@ -510,10 +510,10 @@ a
 	text-align: justify;
 	text-align-last: center;
 	-moz-text-align-last: center;
-	font-size: 11px;
-	letter-spacing: 0.1em;
+	font-size: 1rem;
+	/* letter-spacing: 0.05em; */
 	color: #7a7a7a;
-	line-height: 18px;
+	line-height: 1.2rem;
 }
 
 .about-icon
