@@ -20,5 +20,8 @@ main:
 
 careers:
   - name: Home
-    url: "#home"
+    url: "index.html#home"
     slug: home
+  - name: Contact
+    url: "#contact"
+    slug: contact
