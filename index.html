@@ -29,7 +29,7 @@ layout: default
     <!-- Start Slideshow -->
     <div class="moduletable">
 
-      <div id="header-wrapper">
+      <div id="header-wrapper" data-slug="home">
         <div id="header-slider" class="clearfix">
           <div id="header-image-1" class="header-image">
             <!-- <div class="transparent-frame"></div> -->
@@ -80,37 +80,61 @@ layout: default
       <div class="separator-100"></div>
       <!-- Content -->
 
+      <section id="about-wrapper" class="responsive-wrapper clearfix" data-slug="about">
+        <h2>About</h2>
+        <!-- <p class="section-subtitle">READ ABOUT HOW AWESOME WE ARE</p> -->
+        <div class="separator-small">&nbsp;</div>
+        <div class="about-item col-4" data-scroll-reveal="">
+          <!-- <div class="about-icon li_lab">&nbsp;</div>
+        <h4>MODERN DESIGN</h4>
+        <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.</p> -->
+        </div>
+        <div class="about-item col-4" data-scroll-reveal="">
+          <!-- <div class="about-icon li_vynil">&nbsp;</div> -->
+          <!-- <h4>READY TO USE</h4> -->
+          <h4>Paladin Ventures is the parent brand of several startup ventures founded by alumni of Cornell and Harvard University. These ventures range from an education startup with a #1 bestselling book to a software development consultancy.</h4>
+        </div>
+        <div class="about-item col-4" data-scroll-reveal="">
+          <!-- <div class="about-icon li_display">&nbsp;</div>
+        <h4>RESPONSIVE</h4>
+        <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.</p> -->
+        </div>
+      </section>
 
+      <div class="separator-70"></div>
 
-            <section id="team" class="clearfix">
-              <!-- TODO: make smooth scrolling work when you click in the header bar.
-              Need to fix something in scripts.js. -->
-              <h2>Team</h2>
+      <section id="team-wrapper" class="responsive-wrapper clearfix" data-slug="team">
+        <!-- TODO: make smooth scrolling work when you click in the header bar.
+        Need to fix something in scripts.js. -->
+        <h2>Team</h2>
 
-              <p class="showcase-subtitle black">
-                Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the following.
-              </p>
+        <p class="showcase-subtitle black">
+          Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the
+          following.
+        </p>
 
-              <div class="separator-small"></div>
+        <div class="separator-small"></div>
+      </section>
 
-              {% for company in site.data.team_companies %}
-                <div class="clients-item col-2" data-scroll-reveal="">
-                  <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
-                <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
-                <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
-              </div>
-              {% endfor %}
-            </section>
-            <div class="separator-100"></div>
+      <section class="clearfix" data-slug="team">
+        {% for company in site.data.team_companies %}
+        <div class="clients-item col-2" data-scroll-reveal="">
+          <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
+          <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
+          <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
+        </div>
+        {% endfor %}
+      </section>
+      <div class="separator-100"></div>
 
 
 
 
 
       <!-- End Content -->
-    <!-- End Footer Section -->
-  </div>
-  <!-- End Container -->
+      <!-- End Footer Section -->
+    </div>
+    <!-- End Container -->
 
   </div>
   <!-- End Site_wraper-->

@@ -141,24 +141,24 @@
       var showcaseImage = $('#showcase-wrapper');
       var navigationWrapper = $('#navigation-wrapper');
 
-      if (window.innerWidth > 992) {
-        var scrollPos = $(window).scrollTop() * direction * 0.6;
-        headerImage.css('background-position', '0px ' + scrollPos + 'px');
-
-        var numbersScrollPos = ($(window).scrollTop() - $('#parallax-numbers-wrapper').offset().top) * direction * 0.6;
-        parallaxImage.css('background-position', '0px ' + numbersScrollPos + 'px');
-
-        var testimonialsScrollPos = ($(window).scrollTop() - $('#testimonials-wrapper').offset().top) * direction * 0.6;
-        testimonialsImage.css('background-position', '0px ' + testimonialsScrollPos + 'px');
-
-        var showcaseScrollPos = ($(window).scrollTop() - $('#showcase-wrapper').offset().top) * direction * 0.6;
-        showcaseImage.css('background-position', '0px ' + showcaseScrollPos + 'px');
-      } else {
-        headerImage.css('background-position', '0px 0px');
-        parallaxImage.css('background-position', '0px 0px');
-        testimonialsImage.css('background-position', '0px 0px');
-        showcaseImage.css('background-position', '0px 0px');
-      }
+      // if (window.innerWidth > 992) {
+      //   var scrollPos = $(window).scrollTop() * direction * 0.6;
+      //   headerImage.css('background-position', '0px ' + scrollPos + 'px');
+      //
+      //   var numbersScrollPos = ($(window).scrollTop() - $('#parallax-numbers-wrapper').offset().top) * direction * 0.6;
+      //   parallaxImage.css('background-position', '0px ' + numbersScrollPos + 'px');
+      //
+      //   var testimonialsScrollPos = ($(window).scrollTop() - $('#testimonials-wrapper').offset().top) * direction * 0.6;
+      //   testimonialsImage.css('background-position', '0px ' + testimonialsScrollPos + 'px');
+      //
+      //   var showcaseScrollPos = ($(window).scrollTop() - $('#showcase-wrapper').offset().top) * direction * 0.6;
+      //   showcaseImage.css('background-position', '0px ' + showcaseScrollPos + 'px');
+      // } else {
+      //   headerImage.css('background-position', '0px 0px');
+      //   parallaxImage.css('background-position', '0px 0px');
+      //   testimonialsImage.css('background-position', '0px 0px');
+      //   showcaseImage.css('background-position', '0px 0px');
+      // }
 
       if ($(window).scrollTop() < $('#content-wrapper').offset().top && menuVisible == 1) {
         navigationWrapper.fadeOut(200);
@@ -177,7 +177,8 @@
           $('#navigation-menu').find('a').each(function() {
             var $this = $(this);
 
-            if (currentMenuItem.attr('id').indexOf($this.html().toLowerCase()) >= 0) {
+            if (currentMenuItem.data("slug") && currentMenuItem.data("slug") === $this.data('slug')) {
+              // this header matches the navbar item
               $this.css('font-family', 'novecento_sans_wide_bookbold');
 
               if (window.innerWidth > 992)
@@ -192,36 +193,37 @@
         }
       }, 30));
 
-      if (isScrolledIntoView('#parallax-numbers-holder')) {
-        if (parallaxNumbersBegin == 0) {
-          parallaxNumbersBegin = 1;
-          $('.parallax-numbers-number').each(function(index) {
-            var itemSelector = $(this);
-            var maxValue = parseInt($(this).attr('data-max'));
-
-            itemSelector.parent().find('.parallax-numbers-text').transition({
-              top: 0,
-              opacity: 1,
-              delay: index * 100
-            }, 200);
-
-            $({
-              value: 0
-            }).animate({
-              value: maxValue
-            }, {
-              duration: 2000,
-              easing: 'swing',
-              step: function(now, fx) {
-                itemSelector.html(Math.ceil(this.value));
-              },
-              complete: function() {
-                itemSelector.html(maxValue);
-              }
-            });
-          });
-        }
-      }
+      //
+      // if (isScrolledIntoView('#parallax-numbers-holder')) {
+      //   if (parallaxNumbersBegin == 0) {
+      //     parallaxNumbersBegin = 1;
+      //     $('.parallax-numbers-number').each(function(index) {
+      //       var itemSelector = $(this);
+      //       var maxValue = parseInt($(this).attr('data-max'));
+      //
+      //       itemSelector.parent().find('.parallax-numbers-text').transition({
+      //         top: 0,
+      //         opacity: 1,
+      //         delay: index * 100
+      //       }, 200);
+      //
+      //       $({
+      //         value: 0
+      //       }).animate({
+      //         value: maxValue
+      //       }, {
+      //         duration: 2000,
+      //         easing: 'swing',
+      //         step: function(now, fx) {
+      //           itemSelector.html(Math.ceil(this.value));
+      //         },
+      //         complete: function() {
+      //           itemSelector.html(maxValue);
+      //         }
+      //       });
+      //     });
+      //   }
+      // }
     });
 
     //Portfolio item behaviors
@@ -802,7 +804,9 @@
     var menuItem = false;
     var navigationWrapper = $('#navigation-wrapper');
 
-    $('#content-wrapper').children('section').not('#parallax-numbers-wrapper, #learn-more-wrapper').each(function() {
+    $('#content-wrapper').children('section')
+    // .not('#parallax-numbers-wrapper, #learn-more-wrapper')
+    .each(function() {
       if ($(window).scrollTop() + navigationWrapper.height() + 30 >= $(this).offset().top && $(window).scrollTop() + navigationWrapper.height() <= $(this).offset().top + $(this).height())
         menuItem = $(this);
     });

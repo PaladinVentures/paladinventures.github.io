@@ -1,6 +1,6 @@
 {% for page in site.data.pages %}
   <li>
-    <a href="{{ page.url }}" class="scroll">
+    <a href="{{ page.url }}" class="scroll" data-slug="{{ page.slug }}">
       <span>
         {{ page.name | upcase }}
       </span>
