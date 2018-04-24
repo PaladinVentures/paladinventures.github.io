@@ -1,9 +1,9 @@
-{% for page in site.data.pages %}
-  <li>
-    <a href="{{ page.url }}" class="scroll" data-slug="{{ page.slug }}">
-      <span>
-        {{ page.name | upcase }}
-      </span>
-    </a>
-  </li>
+{% if navbar_type == "careers" %}
+{% for page in site.data.pages.careers %}
+  {% include navbar_item.html %}
 {% endfor %}
+{% else %}
+  {% for page in site.data.pages.main %}
+    {% include navbar_item.html %}
+  {% endfor %}
+{% endif %}

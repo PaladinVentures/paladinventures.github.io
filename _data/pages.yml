@@ -1,18 +1,24 @@
-- name: Home
-  url: "#home"
-  slug: home
-- name: About
-  url: "#about"
-  slug: about
-- name: Portfolio
-  url: "#portfolio"
-  slug: portfolio
-- name: Team
-  url: "#team"
-  slug: team
-- name: Careers
-  url: careers.html
-  slug: careers
-- name: Contact
-  url: "#contact"
-  slug: contact
+main:
+  - name: Home
+    url: "#home"
+    slug: home
+  - name: About
+    url: "#about"
+    slug: about
+  - name: Portfolio
+    url: "#portfolio"
+    slug: portfolio
+  - name: Team
+    url: "#team"
+    slug: team
+  - name: Careers
+    url: careers.html
+    slug: careers
+  - name: Contact
+    url: "#contact"
+    slug: contact
+
+careers:
+  - name: Home
+    url: "#home"
+    slug: home
