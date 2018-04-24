@@ -63,7 +63,7 @@
 
 .stylish-link, .stylish-link:link, .stylish-link:visited {
   /* cool blue color */
-  color: #25abe6 !important!
+  color: #25abe6;
 }
 
 .portfolio-item {

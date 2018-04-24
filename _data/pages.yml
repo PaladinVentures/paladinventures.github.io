@@ -22,6 +22,9 @@ careers:
   - name: Home
     url: "index.html#home"
     slug: home
+  - name: Apply
+    url: "#apply"
+    slug: apply
   - name: Contact
     url: "#contact"
     slug: contact
