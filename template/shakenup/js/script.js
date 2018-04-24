@@ -804,11 +804,11 @@
     var navigationWrapper = $('#navigation-wrapper');
 
     $('#content-wrapper').children('section')
-    // .not('#parallax-numbers-wrapper, #learn-more-wrapper')
-    .each(function() {
-      if ($(window).scrollTop() + navigationWrapper.height() + 30 >= $(this).offset().top && $(window).scrollTop() + navigationWrapper.height() <= $(this).offset().top + $(this).height())
-        menuItem = $(this);
-    });
+      // .not('#parallax-numbers-wrapper, #learn-more-wrapper')
+      .each(function() {
+        if ($(window).scrollTop() + navigationWrapper.height() + 30 >= $(this).offset().top && $(window).scrollTop() + navigationWrapper.height() <= $(this).offset().top + $(this).height())
+          menuItem = $(this);
+      });
 
     return menuItem;
   }
