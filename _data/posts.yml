@@ -7,10 +7,42 @@
   alt: Swipe to Unlock
   # project-date: April 2014
   # client: Start Bootstrap
+  url: http://swipetounlock.com/
   category: Education
-  description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+  description: "A #1 Amazon Business Bestseller, Swipe to Unlock explains the fundamentals of technology and business strategy to non-experts. Through real-world examples, learn about machine learning, big data, and the cloud — without writing a single line of code."
+- title: Belle Apps
+  subtitle: Software Development Consultancy
+  layout: default
+  # date: 2014-07-18
+  img: belle-apps.png
+  thumbnail: belle-apps-thumbnail.png
+  alt: Belle Apps
+  url: http://belleapps.me/
+  # project-date: April 2014
+  # client: Start Bootstrap
+  category: Education
+  description: A software development consultancy specializing in mobile, web, and ML projects. Staffed by students from top schools including the Ivy League, MIT, and Stanford.
+- title: DropRave
+  subtitle: "EDM Clothing Brand"
+  layout: default
+  # date: 2014-07-18
+  img: droprave.png
+  thumbnail: droprave-thumbnail.png
+  alt: DropRave
+  url: https://droprave.com/
+  # project-date: April 2014
+  # client: Start Bootstrap
+  category: eCommerce
+  description: High-quality EDM clothing for an affordable price. Featuring all-over prints and LED Gear, this is the place to find your perfect look and express yourself in the EDM community.
 - title: Stealth Startup
-  subtitle: "By Paladin Ventures"
+  subtitle: In the Works
+  layout: default
+  img: stealth.jpg
+  thumbnail: stealth-thumbnail.png
+  alt: Stealth Startup
+  category: Stealth
+- title: Stealth Startup
+  subtitle: In the Works
   layout: default
   img: stealth.jpg
   thumbnail: stealth-thumbnail.png
