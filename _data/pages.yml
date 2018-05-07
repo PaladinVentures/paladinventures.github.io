@@ -1,0 +1,10 @@
+- text: Services
+  url: "#services"
+- text: Portfolio
+  url: "#portfolio"
+- text: About
+  url: "#about"
+- text: Team
+  url: "#team"
+- text: Contact
+  url: "#contact"
