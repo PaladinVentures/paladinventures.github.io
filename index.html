@@ -1,152 +1,20 @@
 ---
-layout: page
-navbar_type: main
+layout: default
 ---
 
+<div class="home">
 
-<section id="showcase-wrapper" class="clearfix" data-slug="about">
-  <div id="about">
-    <p>
-      <!-- START: Articles Anywhere -->
-    </p>
-    <div class="transparent-frame transparent-80">&nbsp;</div>
-    <div id="showcase-inner">
-      <div class="showcase-column col-6 align-left">
-        <!-- <img src="./template/shakenup/images/header-logo.png" alt="" /> -->
-        <div class="separator-70">&nbsp;</div>
-        <h2 class="showcase-title">ABOUT PALADIN VENTURES</h2>
-        <h4 class="showcase-subtitle">
-              Paladin Ventures is the parent brand of several startup ventures founded by alumni of Cornell and Harvard University. These ventures range from an education startup with a #1 bestselling book to a software development consultancy.
-            </h4>
-      </div>
-      <div class="showcase-column col-6 align-center"><img src="./images/paladin/brand/paladin-blue.png" alt="" />
-        <!-- <a href="#" class="load-more-button">LEARN MORE</a></div> -->
-      </div>
-      <p>
-        <!-- END: Articles Anywhere -->
-      </p>
-    </div>
-</section>
+  <h1>Posts</h1>
 
-<div class="separator-100"></div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<section id="portfolio-wrapper" class="clearfix" data-slug="portfolio">
-  <div id="portfolio">
-    <h2>Portfolio</h2>
-    <p class="section-subtitle">OUR PORTFOLIO VENTURES</p>
-    <div class="separator-small"></div>
-    <!--/Ajax Load-->
-
-    <div id="portfolio-module-115" class="sp-portfolio default">
-      <!-- <div class="filter-wrapper">
-              <div class="filter-holder"> <a class="filter-button button-active" href="#" data-filter="*">Show All</a>
-                <a class="filter-button" href="#" data-filter=".web-design"> WEB DESIGN </a>
-                <a class="filter-button" href="#" data-filter=".branding"> BRANDING </a>
-                <a class="filter-button" href="#" data-filter=".photography"> PHOTOGRAPHY </a>
-              </div>
-            </div> -->
-      <div id="portfolio-full-item">
-        <div id="portfolio-full-item-holder">
-          <div id="portfolio-full-item-inner" class="clearfix">
-            <div id="portfolio-full-item-text" class="col-3">
-              <h4></h4>
-              <p></p>
-            </div>
-            <div id="portfolio-full-item-image" class="col-6">
-              <div id="portfolio-full-item-navigation"> <a href="#" class="arrow-left"><i class="fa fa-arrow-left"></i></a> <a href="#" class="arrow-right"><i class="fa fa-arrow-right"></i></a> </div>
-              <img src="#" alt=""> </div>
-            <div id="portfolio-full-item-close" class="col-3"> <img src="./template/images/close-button.png" alt=""> </div>
-            <div class="clearfix"></div>
-            <div class="separator-100"></div>
-            <div id="portfolio-full-item-additional"> </div>
-          </div>
-          <!-- <div class="separator-100"></div>
-                <div id="portfolio-full-item-related">
-                  <h2>Related projects</h2>
-                  <div id="portfolio-full-item-projects"> </div>
-                </div> -->
-        </div>
-      </div>
-      <ul id="portfolio-holder" class="portfolio-items">
-        <!-- TEMPORARY, to push our boxes to the center -->
-        <li class="portfolio-item col-3 web-design visible">
-          <!-- this is just a dummy filler to make this pusher take up space -->
-          <div style="width: 100%; height: 1px;"></div>
-        </li>
-        {% for company in site.data.portfolio %}
-        <li class="portfolio-item col-2 web-design visible"> <img src="images/paladin/portfolio-assets/{{ company.image }}" alt="">
-          <div class="portfolio-item-hover">
-            <div class="portfolio-item-frame"></div>
-            <div class="portfolio-item-text">
-              <h4><a href="{{ company.url }}" class="stylish-link">{{ company. name }}</a></h4>
-              <!-- <div class="item-separator"></div> -->
-              <!-- <h5>WEB DESIGN</h5> -->
-            </div>
-          </div>
-          <div class="portfolio-full-content">
-            <!-- <div class="portfolio-additional-photos">
-                    <p>./template/images/portfolio-item/item1/3.jpg</p>
-                  </div> -->
-            <div class="portfolio-full-text">
-              <p>{{ company.description }}</a>
-            </div>
-            <!-- <div class="portfolio-related">
-                    <p>portfolio1</p>
-                    <p>portfolio2</p>
-                    <p>portfolio3</p>
-                    <p>portfolio4</p>
-                    <p>portfolio5</p>
-                    <p>portfolio6</p>
-                    <p>portfolio7</p>
-                    <p>portfolio8</p>
-                    <p>portfolio9</p>
-                    <p>portfolio10</p>
-                    <p>portfolio11</p>
-                    <p>portfolio12</p>
-                  </div> -->
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-
-      <!--/.sp-portfolio-items-->
-
-      <!-- <a href="#" class="port-more-button"> <i class="icon-spinner icon-spin"></i> <span>Load More</span> </a> -->
-    </div>
-    <!--/.sp-portfolio-->
-    <script type="text/javascript" src="scripts/portfolio-gallery.js"></script>
-
-    <br><br>
-  </div>
-</section>
-
-<section id="team" class="responsive-wrapper clearfix" data-slug="team">
-  <h2>Team</h2>
-
-  <br>
-
-  <p class="showcase-subtitle black">
-    Our team is comprised of industry leaders from a variety of different sectors including product management, venture capital, growth marketing, software development, and management consulting. We have work experience at leading companies including the
-    following.
-  </p>
-
-  <div class="separator-small"></div>
-</section>
-
-<section class="clearfix" data-slug="team">
-  {% for company in site.data.team_companies %}
-  <div class="clients-item col-2" data-scroll-reveal="">
-    <img class="clients-background" src="./images/paladin/companies/{{ company.image }}" alt="{{ company.image }}" />
-    <!-- <div class="transparent-frame transparent-80">&nbsp;</div> -->
-    <!-- <img class="clients-logo" src="./template/shakenup/images/clients/envato.png" alt="" /> -->
-  </div>
-  {% endfor %}
-</section>
-<div class="separator-100"></div>
-
-
-
-
-
-<!-- End Content -->
+</div>
