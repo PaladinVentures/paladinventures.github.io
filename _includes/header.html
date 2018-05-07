@@ -9,7 +9,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  {{site.title | upcase }}
+                  <!-- <img src="img/logo-light.png"> -->
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,9 +47,10 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">&nbsp;</div>
+                <div class="intro-heading">&nbsp;</div>
+                <div class="intro-lead-in">&nbsp;</div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">&nbsp;</a> -->
             </div>
         </div>
     </header>
@@ -55,4 +59,3 @@
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-
