@@ -266,17 +266,20 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.bg-image, header {
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/paladin-sign.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -865,4 +868,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+
+
+
+/* CUSTOM STUFF */
+#team {
+  color: #fff;
+  background-image: url('{{ site.baseurl }}/img/business-people.jpg');
 }
