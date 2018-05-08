@@ -1,9 +1,7 @@
-- text: Services
-  url: "#services"
-- text: Portfolio
-  url: "#portfolio"
 - text: About
   url: "#about"
+- text: Portfolio
+  url: "#portfolio"
 - text: Team
   url: "#team"
 - text: Contact
