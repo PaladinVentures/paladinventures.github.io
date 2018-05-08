@@ -35,3 +35,34 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+
+
+
+// CUSTOM STUFF
+$('#send-email').on('click', function(){
+  var to = "contact@paladin.ventures";
+  var subject = $('#subject').val();
+  var message = $('#message').val();
+  // var name = $('#name').val();
+
+  // var body = message + "From: " + name;
+
+  window.open(getMailtoUrl(to, subject, message));
+});
+
+function getMailtoUrl(to, subject, body) {
+    var args = [];
+    if (typeof subject !== 'undefined') {
+        args.push('subject=' + encodeURIComponent(subject));
+    }
+    if (typeof body !== 'undefined') {
+        args.push('body=' + encodeURIComponent(body))
+    }
+
+    var url = 'mailto:' + encodeURIComponent(to);
+    if (args.length > 0) {
+        url += '?' + args.join('&');
+    }
+    return url;
+}

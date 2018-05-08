@@ -661,14 +661,14 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    /* background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 section#contact .section-heading {
-    color: #fff;
+    /* color: #fff; */
 }
 
 section#contact .form-group {
