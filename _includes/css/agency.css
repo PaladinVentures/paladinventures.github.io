@@ -891,3 +891,8 @@ body {
 .text-justify {
   text-align: justify;
 }
+
+.section-primary, .section-primary p {
+  background-color: #{{ site.data.template.color.primary }};
+  color: white;
+}
