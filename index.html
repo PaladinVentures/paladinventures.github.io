@@ -2,6 +2,20 @@
 layout: default
 ---
 
+{% comment %}
+  {% include services.html %}
+{% endcomment %}
+{% include about.html %}
+{% include portfolio_grid.html %}
+{% comment %}
+
+{% endcomment %}
+{% include team.html %}
+{% include clients.html %}
+{% include contact.html %}
+
+
+<!--
 <div class="home">
 
   <h1>Posts</h1>
@@ -17,4 +31,4 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</div> -->

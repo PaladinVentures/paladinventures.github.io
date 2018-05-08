@@ -21,10 +21,12 @@
                                     <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
                                     </strong>
                                 </li> -->
-                                <li><strong>
-                                      <a href="{{ post.url }}">Website</a>
-                                    </strong>
-                                </li>
+                                {% if post.url %}
+                                  <li><strong>
+                                        <a href="{{ post.url }}">Website</a>
+                                      </strong>
+                                  </li>
+                                {% endif %}
                                 <li>
                                     <strong>Category: {{ post.category }}
                                     </strong>
