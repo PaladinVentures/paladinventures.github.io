@@ -1,8 +1,15 @@
 - text: About
   url: "#about"
+  homepage: true
 - text: Portfolio
   url: "#portfolio"
+  homepage: true
 - text: Team
   url: "#team"
+  homepage: true
 - text: Contact
   url: "#contact"
+  homepage: true
+- text: Careers
+  url: "careers"
+  homepage: true

@@ -279,7 +279,15 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-image: url('{{ site.baseurl }}/img/paladin-sign.jpg');
+
+}
+
+header.header-sign {
+  background-image: url('{{ site.baseurl }}/img/paladin-sign.jpg');
+}
+
+header.header-office {
+  background-image: url('{{ site.baseurl }}/img/paladin-office.jpg');
 }
 
 header .intro-text {

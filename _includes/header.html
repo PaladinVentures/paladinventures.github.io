@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="{% if page.url == '/' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
                   {{site.title | upcase }}
                   <!-- <img src="img/logo-light.png"> -->
                 </a>
@@ -21,9 +21,13 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    {% for page in site.data.pages %}
+                    {% for linkedpage in site.data.pages %}
                       <li>
-                          <a class="page-scroll" href="{{ page.url }}">{{ page.text }}</a>
+                        {% if page.url == '/' %}
+                          <a class="page-scroll" href="{{ linkedpage.url }}">{{ linkedpage.text }}</a>
+                        {% else %}
+                          <a class="page-scroll" href="{{ site.baseurl }}/{{ linkedpage.url }}">{{ linkedpage.text }}</a>
+                        {% endif %}
                       </li>
                     {% endfor %}
                 </ul>
@@ -34,7 +38,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header style="background-image: url('{{ site.baseurl }}/img/{{ page.header_image }}');">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">
