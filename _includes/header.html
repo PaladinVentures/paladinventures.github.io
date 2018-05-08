@@ -1,90 +1,73 @@
-
-<body>
-
-  <!-- Site_wraper-->
-  <div class="site_wrapper">
-    <!-- Page Loader-->
-    <div id="pageloader">
-      <div class="loader-item"> <img src="./template/shakenup/images/loading.gif" alt='Loading...' /> </div>
-    </div>
-    <!-- End Page Loader-->
-
-    <!-- Container -->
-    <div id="navigation-wrapper">
-      <div id="navigation-inner">
-        <!-- this is the nav that appears when you scroll down - light background -->
-        <a id="navigation-logo" href="./index.html">
-          <img src="images/paladin/brand/paladin-logo-dark-draft.png" alt="navigation-logo"></a>
-        <div id="navigation-menu-wrapper">
-          <img src="images/paladin/brand/paladin-logo-dark-draft.png" class="mobile-menu-icon" alt="mobile-menu-icon">
-
-          <ul id="navigation-menu" class="clearfix">
-            {% include navbar.html %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Start Slideshow -->
-    <div class="moduletable">
-
-      <div id="header-wrapper" data-slug="home">
-        <div id="header-slider" class="clearfix">
-          <div id="header-image-1" class="header-image">
-            {% if page.header %}
-            <div class="transparent-frame"></div>
-            <div class="header-slide">
-              <p class="header-title">
-                {{ page.header }}
-                <br>
-                <br>
-                <br>
-                <br>
-              </p>
-              <!-- <p class="header-desc">
-                {{ site.description }}
-              </p> -->
-              <!-- <a class="header-link filter-button" href="#portfolio-wrapper">LEARN MORE</a> </div> -->
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% if page.url == '/' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
+                  {{site.title | upcase }}
+                  <!-- <img src="img/logo-light.png"> -->
+                </a>
             </div>
-          {% endif %}
-        </div>
-        <!-- <div id="header-slidernav"> <i class="fa fa-angle-right header-slidernav-arrow"></i>
-          <div id="header-slidernav-page" class="clearfix">
-            <div id="header-slidernav-page-inner">
-              <p id="header-slidernav-current">1</p>
-              <p id="header-slidernav-total">/1</p>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    {% for linkedpage in site.data.pages %}
+                      <li>
+                        {% if page.url == '/' %}
+                          <a class="page-scroll" href="{{ linkedpage.url }}">{{ linkedpage.text }}</a>
+                        {% else %}
+                          <a class="page-scroll" href="{{ site.baseurl }}/{{ linkedpage.url }}">{{ linkedpage.text }}</a>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                </ul>
             </div>
-          </div>
-          <i class="fa fa-angle-left header-slidernav-arrow"></i> </div> -->
-        <div id="header-navigation">
-
-          <!-- this is the nav that appears at the very top of the page - dark and transparent -->
-          <a id="header-logo" href="./index.html">
-            <img src="images/paladin/brand/paladin-logo-light-draft.png" alt=""></a>
-
-          <div id="header-menu-wrapper">
-            <img src="images/paladin/brand/paladin-logo-light-draft.png" class="mobile-menu-icon" alt="">
-            <!-- Start Header menu -->
-
-
-
-            <ul id="header-menu" class="clearfix">
-              {% include navbar.html %}
-            </ul>
-
-
-
-            <!-- End Header Menu -->
-          </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div id="header-getstarted">
-          <p id="getstarted-text">SCROLL DOWN</p>
-          <i id="getstarted-arrow" class="fa fa-angle-down"></i> </div>
-      </div>
-    </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-    <!-- End Slideshow -->
-
-    <div id="content-wrapper">
-      <div class="separator-100"></div>
-      <!-- Content -->
+    <!-- Header -->
+    <header style="background-image: url('{{ site.baseurl }}/img/{{ page.header_image }}');">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">
+                  {% if page.intro_lead_in %}
+                    {{ page.intro_lead_in }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
+                <div class="intro-heading">
+                  {% if page.intro_heading %}
+                    {{ page.intro_heading }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
+                <div class="intro-lead-in">
+                  {% if page.intro_lead_out %}
+                    {{ page.intro_lead_out }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">&nbsp;</a> -->
+            </div>
+        </div>
+    </header>
+<!--
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+ -->

@@ -1,27 +1,25 @@
-
-      <!-- Footer Section -->
-
-      <section id="footer-wrapper" data-slug="contact">
-        <div id="contact">
-
-          <div id="footer-logo-wrapper">
-            <img id="footer-logo" src="images/paladin/brand/paladin-logo-light-draft.png" alt="">
-          </div>
-
-          <p class="lead">
-            Copyright &copy; 2018 Paladin Ventures.
-            <a href="mailto:contact@paladin.ventures"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/company/swipe-to-unlock/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/PaladinVentures"><i class="fa fa-github"></i></a>
-          </p>
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.data.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </section>
-
-
-      <!-- End Footer Section -->
-      </div>
-      <!-- End Container -->
-
-    </div>
-    <!-- End Site_wraper-->
-</body>
+    </footer>
