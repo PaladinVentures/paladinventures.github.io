@@ -37,9 +37,27 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">&nbsp;</div>
-                <div class="intro-heading">&nbsp;</div>
-                <div class="intro-lead-in">&nbsp;</div>
+                <div class="intro-lead-in">
+                  {% if page.intro_lead_in %}
+                    {{ page.intro_lead_in }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
+                <div class="intro-heading">
+                  {% if page.intro_heading %}
+                    {{ page.intro_heading }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
+                <div class="intro-lead-in">
+                  {% if page.intro_lead_out %}
+                    {{ page.intro_lead_out }}
+                  {% else %}
+                    &nbsp;
+                  {% endif %}
+                </div>
                 <!-- <a href="#services" class="page-scroll btn btn-xl">&nbsp;</a> -->
             </div>
         </div>
