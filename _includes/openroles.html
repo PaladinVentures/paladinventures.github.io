@@ -1,55 +1,58 @@
-<section id="roles" class="section-primary">
+<section id="business" class="bg-image business-bg">
 
   <div class="container">
       <div class="row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Open Roles</h2>
+              <h2 class="section-heading">Business Roles</h2>
               <br>
-
-              <!-- <br> -->
-              <!-- <h3 class="section-subheading text-muted">
-                Now recruiting for Summer 2018
-              </h3> -->
           </div>
       </div>
-
-      <h3>Business</h3>
       {% for job in site.data.jobs.business %}
         <div class="row">
-          <div class="col-md-3">
-            <i class="fa fa-{{ job.icon }}"></i>
+          <div class="col-md-3 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-{{ job.icon }} fa-stack-1x text-primary"></i>
+            </span>
           </div>
-          <div class="col-md-3">
-            <h4>{{ job.name }}</h4>
+          <div class="col-md-9">
+            <h3>{{ job.role }}</h3>
             <p class="large">
               {{ job.description }}
             </p>
           </div>
         </div>
       {% endfor %}
+  </div>
+</section>
 
+<br>
+<br>
+
+<section id="design-eng" class="bg-image coding-bg">
+
+  <div class="container">
       <div class="row">
-          <div class="col-md-6">
-
-            <ul>
-              <li>
-                <strong>Communications/PR Intern:</strong> You will create a communication and press release strategy for a portfolio company for external messaging to news organization and partners.
-              </li>
-              <li><strong>Social Media & Content Marketing Intern:</strong> You will craft messaging on social media and content creation for a portfolio company.</li>
-              <li><strong>Market Research & Strategy Intern:</strong> One of our portfolio companies is working on a new product which could disrupt the curriculum taught in high schools around the country. You will do market research to understand the needs of relevant stakeholders and creating a go-to-market strategy.</li>
-              <li><strong>Growth & Performance Marketing Intern:</strong> You will craft and execut on the paid advertising strategy for a portfolio company on Google, Facebook, and other relevant consumer platforms.</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3>Design &amp; Engineering</h3>
-            <ul>
-              <li><strong>Product Design Intern:</strong> You will create website and app designs for new verticals being explored by our portfolio companies. Please include links or attachments of your previous design work in your application if applicable.</li>
-
-              <li><strong>Graphic Design Intern:</strong> You will help graphically shape the brand identity of a portfolio company. Please include links or attachments of your previous design work in your application if applicable.</li>
-
-              <li><strong>Software Engineering Intern:</strong> You will build proof-of-concepts of product ideas. Available projects include full-stack web development, mobile (iOS or Android) app development, and proof-of-concept algorithm design and testing. Please include links to your Github or other previous projects if applicable.</li>
-            </ul>
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Design &amp; Engineering Roles</h2>
+              <br>
           </div>
       </div>
+      {% for job in site.data.jobs.design_eng %}
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-{{ job.icon }} fa-stack-1x text-primary"></i>
+            </span>
+          </div>
+          <div class="col-md-9">
+            <h3>{{ job.role }}</h3>
+            <p class="large">
+              {{ job.description }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
   </div>
 </section>

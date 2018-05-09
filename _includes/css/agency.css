@@ -900,3 +900,21 @@ body {
 .extra-padding {
   padding: 3em;
 }
+
+.text-white {
+  color: #fff;
+}
+
+.business-bg {
+  background-image: url({{ site.baseurl }}/img/business.jpg);
+  color: #fff;
+}
+
+/* .business-bg p, .business-bg h3 {
+  background-color: rgba(0,0,0,0.2);
+} */
+
+.coding-bg {
+  background-image: url({{ site.baseurl }}/img/coding3.jpg);
+  color: #fff;
+}
