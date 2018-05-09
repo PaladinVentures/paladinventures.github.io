@@ -896,3 +896,7 @@ body {
   background-color: #{{ site.data.template.color.primary }};
   color: white;
 }
+
+.extra-padding {
+  padding: 3em;
+}
