@@ -35,14 +35,14 @@
   category: eCommerce
   description: High-quality EDM clothing for an affordable price. Featuring all-over prints and LED Gear, this is the place to find your perfect look and express yourself in the EDM community.
 - title: Stealth Startup
-  subtitle: In the Works
+  subtitle: Coming Soon
   layout: default
-  img: stealth.jpg
-  thumbnail: stealth-thumbnail.png
+  img: paladin-steel-thumbnail.jpg
+  thumbnail: paladin-steel-thumbnail.jpg
   alt: Stealth Startup
   category: Stealth
 - title: Stealth Startup
-  subtitle: In the Works
+  subtitle: Coming Soon
   layout: default
   img: stealth.jpg
   thumbnail: stealth-thumbnail.png
