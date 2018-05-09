@@ -915,6 +915,6 @@ body {
 } */
 
 .coding-bg {
-  background-image: url({{ site.baseurl }}/img/coding3.jpg);
+  background-image: url({{ site.baseurl }}/img/coding.jpg);
   color: #fff;
 }
