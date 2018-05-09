@@ -2,15 +2,19 @@ business:
   - role: Communications/PR Intern
     description: >
       You will create a communication and press release strategy for a portfolio company for external messaging to news organization and partners.
+    icon: comments
   - role: Social Media & Content Marketing Intern
     description: >
       You will craft messaging on social media and content creation for a portfolio company.
+    icon: share-square
   - role: Market Research & Strategy Intern
     description: >
       One of our portfolio companies is working on a new product which could disrupt the curriculum taught in high schools around the country. You will do market research to understand the needs of relevant stakeholders and creating a go-to-market strategy.
+    icon: lightbulb-o
   - role: Growth & Performance Marketing Intern
     description: >
       You will craft and execute on the paid advertising strategy for a portfolio company on Google, Facebook, and other relevant consumer platforms.
+    icon: line-chart
 
 design_eng:
   - role: Product Design Intern
