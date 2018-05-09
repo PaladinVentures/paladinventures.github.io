@@ -1,0 +1,24 @@
+business:
+  - role: Communications/PR Intern
+    description: >
+      You will create a communication and press release strategy for a portfolio company for external messaging to news organization and partners.
+  - role: Social Media & Content Marketing Intern
+    description: >
+      You will craft messaging on social media and content creation for a portfolio company.
+  - role: Market Research & Strategy Intern
+    description: >
+      One of our portfolio companies is working on a new product which could disrupt the curriculum taught in high schools around the country. You will do market research to understand the needs of relevant stakeholders and creating a go-to-market strategy.
+  - role: Growth & Performance Marketing Intern
+    description: >
+      You will craft and execut on the paid advertising strategy for a portfolio company on Google, Facebook, and other relevant consumer platforms.
+
+design_eng:
+  - role: Product Design Intern
+    description: >
+      You will create website and app designs for new verticals being explored by our portfolio companies. Please include links or attachments of your previous design work in your application if applicable.
+  - role: Graphic Design Intern
+    description: >
+      You will help graphically shape the brand identity of a portfolio company. Please include links or attachments of your previous design work in your application if applicable.
+  - role: Software Engineering Intern
+    description: >
+      You will build proof-of-concepts of product ideas. Available projects include full-stack web development, mobile (iOS or Android) app development, and proof-of-concept algorithm design and testing. Please include links to your Github or other previous projects if applicable.
