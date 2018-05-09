@@ -885,7 +885,7 @@ body {
 /* CUSTOM STUFF */
 #team {
   color: #fff;
-  background-image: url('{{ site.baseurl }}/img/paladin-people.png');
+  background-image: url('{{ site.baseurl }}/img/testr.jpg');
 }
 
 .text-justify {
