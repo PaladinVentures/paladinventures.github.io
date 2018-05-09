@@ -1,0 +1,29 @@
+<section id="team-companies">
+    <div class="container">
+      <h3 class="text-center">
+        Our team has work experience at companies including:
+      </h3>
+
+      <br>
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        {% for company in site.data.team_companies.top %}
+          <div class="col-xs-2">
+              <img src="{{ site.baseurl }}/img/companies/{{ company.image }}" class="img-responsive img-rounded" alt="{{ company.name }}">
+          </div>
+        {% endfor %}
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class="col-xs-3"></div>
+        {% for company in site.data.team_companies.smaller %}
+          <div class="col-xs-1">
+              <img src="{{ site.baseurl }}/img/companies/{{ company.image }}" class="img-responsive img-rounded" alt="{{ company.name }}">
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>

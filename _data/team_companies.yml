@@ -1,12 +1,27 @@
-- image: amazon.png
-- image: box.png
-- image: ey.png
-- image: facebook.png
-- image: google.png
-- image: ibm.png
-- image: khan-academy.png
-- image: mckinsey.png
-- image: microsoft.png
-- image: palantir.png
-- image: stripes-group.png
-- image: uber.png
+top:
+  - company: Google
+    image: google.png
+  - company: Facebook
+    image: facebook.png
+  - company: Amazon
+    image: amazon.png
+  - company: Microsoft
+    image: microsoft.png
+  - company: McKinsey
+    image: mckinsey.png
+
+smaller:
+  - company: Box
+    image: box.png
+  - company: IBM
+    image: ibm.png
+  - company: Khan Academy
+    image: khan-academy.png
+  - company: Palantir
+    image: palantir.png
+  # - company: Stripes Group
+  #   image: stripes-group.png
+  - company: Uber
+    image: uber.png
+  - company: EY
+    image: ey.png
