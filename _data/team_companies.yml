@@ -19,8 +19,8 @@ smaller:
     image: khan-academy.png
   - company: Palantir
     image: palantir.png
-  # - company: Stripes Group
-  #   image: stripes-group.png
+  - company: Stripes Group
+    image: stripes.png
   - company: Uber
     image: uber.png
   - company: EY
