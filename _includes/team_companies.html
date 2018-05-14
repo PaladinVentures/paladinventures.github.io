@@ -7,6 +7,7 @@
       <br>
 
       <div class="row">
+        <!-- HARDCODED based on the number of companies -->
         <div class="col-xs-1"></div>
         {% for company in site.data.team_companies.top %}
           <div class="col-xs-2">
@@ -18,7 +19,8 @@
       <br><br>
 
       <div class="row hidden-xs">
-        <div class="col-sm-3"></div>
+        <!-- HARDCODED based on the number of companies -->
+        <div class="col-sm-2"></div>
         {% for company in site.data.team_companies.smaller %}
           <div class="col-sm-1">
               <img src="{{ site.baseurl }}/img/companies/{{ company.image }}" class="img-responsive img-rounded grayscale grayscale-fade" alt="{{ company.name }}">
