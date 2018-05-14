@@ -885,7 +885,7 @@ body {
 /* CUSTOM STUFF */
 #team {
   color: #fff;
-  background-image: url('{{ site.baseurl }}/img/testr.jpg');
+  background-image: url('{{ site.baseurl }}/img/business-people.jpg');
 }
 
 .text-justify {
@@ -917,4 +917,11 @@ body {
 .coding-bg {
   background-image: url({{ site.baseurl }}/img/coding.jpg);
   color: #fff;
+}
+
+img.wordmark {
+  width: 30%;
+  margin-top: 1em;
+  position: absolute;
+  right: 0;
 }
