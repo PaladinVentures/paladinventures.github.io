@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paravane Ventures</title>
-    <description>Paravane Ventures is the parent brand of several startup ventures founded by alumni of Cornell and Harvard University. These ventures range from an education startup with a #1 bestselling book to a software development consultancy.</description>
+    <title>Paladin Ventures</title>
+    <description>Paladin Ventures is the parent brand of several startup ventures founded by alumni of Cornell and Harvard University. These ventures range from an education startup with a #1 bestselling book to a software development consultancy.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Sep 2018 01:31:43 -0700</pubDate>
-    <lastBuildDate>Tue, 18 Sep 2018 01:31:43 -0700</lastBuildDate>
+    <pubDate>Tue, 02 Oct 2018 21:28:25 -0700</pubDate>
+    <lastBuildDate>Tue, 02 Oct 2018 21:28:25 -0700</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
   </channel>
