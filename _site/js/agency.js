@@ -41,7 +41,7 @@ $('div.modal').on('show.bs.modal', function() {
 
 // CUSTOM STUFF
 $('#send-email').on('click', function(){
-  var to = "contact@paladin.ventures";
+  var to = "contact@paravaneventures.com";
   var subject = $('#subject').val();
   var message = $('#message').val();
   // var name = $('#name').val();
