@@ -1,13 +1,12 @@
 business:
-  - role: Market Research & Strategy Intern
-    description: >
-      One of our portfolio companies is working on a new product which could disrupt the curriculum taught in high schools around the country. You will do market research to understand the needs of relevant stakeholders for creating a go-to-market strategy.
-    icon: lightbulb-o
-  - role: Digital Marketing Intern
+  #- role: Market Research & Strategy Intern
+  #  description: >
+  #    One of our portfolio companies is working on a new product which could disrupt the curriculum taught in high schools around the country. You will do market research to understand the needs of relevant stakeholders for creating a go-to-market strategy.
+  #  icon: lightbulb-o
+  - role: Product Marketing Manager Intern
     description: >
       You will work with one of our portfolio companies to craft a marketing plan and then get to own the execution of it! This could entail exposure to social media marketing & content creation, online ad campaign management, influencer relations, press release strategy, sales, and more depending on a combination of business need and your interests.
     icon: line-chart
-
 design_eng:
   - role: Product Design Intern
     description: >
@@ -19,6 +18,7 @@ design_eng:
     icon: paint-brush
   - role: Software Engineering Intern
     description: >
-      You will build proof-of-concepts of product ideas. Available projects include full-stack web development, mobile (iOS or Android) app development, and proof-of-concept algorithm design and testing. Please include links to your Github or other previous projects if applicable.
+      You will build proof-of-concepts of product ideas. Available projects include are currently heavily focused on front-end web development. Please include links to your Github or other previous projects if applicable. 
     icon: code
     
+#, mobile (iOS or Android) app development, and proof-of-concept algorithm design and testing
