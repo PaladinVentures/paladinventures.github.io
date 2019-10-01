@@ -366,6 +366,38 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+/* ABOUT section on Homepage */
+section#about {
+    padding-bottom: 0;
+}
+section#about .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+section#about .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+section#about .container-fluid .col-md-6 {
+    padding: 0;
+}
+
+section#about hr {
+    width: 113px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 3px solid #1372C3;
+}
+section#about h2 {
+    text-align: right;
+}
+section#about p {
+    text-align: right;
+    font-weight: 300;
+} 
+
+/* ------------------------- */
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
