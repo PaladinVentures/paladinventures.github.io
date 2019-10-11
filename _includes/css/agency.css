@@ -128,6 +128,10 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
+
+
+    width: 276px;
+    box-shadow: 2px 2px 20px rgba(47, 47, 47, 0.12);
 }
 
 .btn-xl:hover,
@@ -311,6 +315,26 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
 }
+header .intro-text .career-intro-lead-in {
+    margin-bottom: 25px;
+    font-family: Roboto Slab;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-weight: 200;
+    letter-spacing: 0.035em;
+}
+
+header .intro-text .career-intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: left;
+    letter-spacing: 0.11em;
+}
 
 @media(min-width:768px) {
     header .intro-text {
@@ -361,10 +385,44 @@ section h3.section-subheading {
     }
 }
 
-.service-heading {
+/* Career - Internships section */
+#services {
+    background-color: #FAFAFA;
+}
+#services h3.section-subheading {
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 26px;
+    font-style: normal;
+    letter-spacing: 0.015em;
+    font-weight: 300;
+}
+
+#services .single-column {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    background: #FFFFFF;
+    padding: 35px;
+    height: 485px;
+}
+#services .single-column .service-heading {
     margin: 15px 0;
     text-transform: none;
+    text-align: left;
+    color: #000;
+    letter-spacing: 0.015em;
 }
+#services .single-column svg {
+    transform: translateX(-120px);
+}
+#services .single-column p {
+    color: #897F7F;
+    line-height: 160%;
+}
+#services a.btn-primary {
+    margin-top: 50px;
+}
+
+/* Career - Open roles section */
+
 
 /* ABOUT section on Homepage */
 section#about {
@@ -392,6 +450,7 @@ section#about hr {
 section#about h2 {
     text-align: right;
 }
+
 section#about p {
     text-align: right;
     font-weight: 300;
