@@ -21,6 +21,7 @@ body {
 p {
     font-size: 14px;
     line-height: 1.75;
+    font-weight: 300;
 }
 
 p.large {
@@ -354,7 +355,7 @@ header .intro-text .career-intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
+        font-size: 55px;
         font-weight: 700;
         line-height: 75px;
     }
@@ -367,7 +368,7 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 2.67em;
 }
 
 section h3.section-subheading {
@@ -388,10 +389,11 @@ section h3.section-subheading {
 /* Career - Internships section */
 #services {
     background-color: #FAFAFA;
+    padding-bottom: 12em;
 }
 #services h3.section-subheading {
     font-family: {{ site.data.template.font.primary }};
-    font-size: 26px;
+    font-size: 1.67em;
     font-style: normal;
     letter-spacing: 0.015em;
     font-weight: 300;
@@ -401,7 +403,7 @@ section h3.section-subheading {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
     background: #FFFFFF;
     padding: 35px;
-    height: 485px;
+    min-height: 485px;
 }
 #services .single-column .service-heading {
     margin: 15px 0;
@@ -410,20 +412,114 @@ section h3.section-subheading {
     color: #000;
     letter-spacing: 0.015em;
 }
-#services .single-column svg {
-    transform: translateX(-120px);
+#services .single-column i {
+    text-align: left;
+    display: block;
 }
+/* #services .single-column svg {
+    transform: translateX(-120px);
+} */
 #services .single-column p {
     color: #897F7F;
     line-height: 160%;
+    margin: 0;
 }
 #services a.btn-primary {
     margin-top: 50px;
 }
 
 /* Career - Open roles section */
+#openRoles {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#openRoles .container {
+    background-color: #FFFFFF;
+    margin-top: -8em;
+}
+#openRoles h2.section-heading {
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+#openRoles .nav-tabs .nav-item {
+    display: inline-block;
+    width: 33%;
+}
+#openRoles .nav-tabs .nav-item a.nav-link {
+    color: #999;
+    font-size: 1.67em;
+    line-height: 34px;
+}
+
+@media (max-width: 425px) {
+    header .intro-text .career-intro-heading {
+        font-size: 55px;
+    }
+    header .intro-text .career-intro-lead-in {
+        font-size: 20px;
+    }
+    #openRoles .nav-tabs .nav-item a.nav-link {
+        font-size: 15px;
+    }
+    #openRoles .tab-pane {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#openRoles .nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+    border: none;
+    border-bottom: 4px solid #65A9E3;
+}
+#openRoles .nav-tabs>.nav-item:nth-of-type(2n) .nav-link {
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+#openRoles .tab-pane.active {
+    opacity: 1;
+}
+#openRoles .tab-content {
+    color: #fff;
+}
+#openRoles .tab-content .tab-pane {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+#openRoles .tab-content .business-bg {
+    background-image: url('{{ site.baseurl }}/img/roles_bg1.png');
+    background-size: cover;
+}
+#openRoles .tab-content .design-bg {
+    background-image: url('{{ site.baseurl }}/img/roles_bg2.png');
+    background-size: cover;
+}
+#openRoles .tab-content .eng-bg {
+    background-image: url('{{ site.baseurl }}/img/roles_bg3.png');
+    background-size: cover;
+}
 
 
+/* Career - apply section */
+#apply {
+    padding-top: 0;
+}
+#apply .apply-content {
+    /* vertical-align: middle;
+    height: 100%; */
+}
+#apply h2.section-heading {
+    margin-bottom: 3em;
+}
+#apply .text-center {
+    margin-top: -8em;
+}
+@media (max-width: 768px) {
+    #apply .text-center {
+        margin-top: 0em;
+    }
+}
 /* ABOUT section on Homepage */
 section#about {
     padding-bottom: 0;
@@ -982,6 +1078,9 @@ body {
 .text-justify {
   text-align: justify;
 }
+.text-left {
+    text-align: left;
+}
 
 .section-primary, .section-primary p {
   background-color: #{{ site.data.template.color.primary }};
@@ -997,7 +1096,7 @@ body {
 }
 
 .business-bg {
-  background-image: url({{ site.baseurl }}/img/business.jpg);
+  background-image: url({{ site.baseurl }}/img/roles_bg1.png);
   color: #fff;
 }
 
@@ -1015,4 +1114,22 @@ img.wordmark {
   margin-top: 1em;
   position: absolute;
   right: 0;
+}
+.no-padding {
+    padding: 0;
+}
+@media (min-width:767px) {
+    .d-lg-flex {
+        display: flex;
+    }
+}
+
+.align-self-center {
+    align-self: center;
+}
+.text-inverse {
+    color: #fff;
+}
+.fa-shadow {
+    text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.15);
 }

@@ -7,7 +7,8 @@ business:
     description: >
       You will work with one of our portfolio companies to craft a marketing plan and then get to own the execution of it! This could entail exposure to social media marketing & content creation, online ad campaign management, influencer relations, press release strategy, sales, and more depending on a combination of business need and your interests.
     icon: line-chart
-design_eng:
+    
+design:
   - role: Product Design Intern
     description: >
       You will create website and app designs for new verticals being explored by our portfolio companies. Please include links or attachments of your previous design work in your application if applicable.
@@ -16,9 +17,10 @@ design_eng:
     description: >
       You will help graphically shape the brand identity of a portfolio company. Please include links or attachments of your previous design work in your application if applicable.
     icon: paint-brush
+eng:
   - role: Software Engineering Intern
     description: >
       You will build proof-of-concepts of product ideas. Available projects include are currently heavily focused on front-end web development. Please include links to your Github or other previous projects if applicable. 
     icon: code
-    
+
 #, mobile (iOS or Android) app development, and proof-of-concept algorithm design and testing

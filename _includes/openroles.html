@@ -1,68 +1,91 @@
-<section id="business" class="bg-image business-bg">
-
+<section id="openRoles">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Business Roles</h2>
-              <br>
-          </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="section-heading">Available Roles</h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item active">
+            <a class="nav-link active" data-toggle="tab" href="#bizRoles">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#designRoles">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#engRoles">Engineering</a>
+          </li>
+        </ul>
       </div>
-      {% for job in site.data.jobs.business %}
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-{{ job.icon }} fa-stack-1x text-primary"></i>
-            </span>
+    </div>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade active business-bg" id="bizRoles">
+        {% for job in site.data.jobs.business %}
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <span class="fa-stack fa-5x">
+                  <i class="fa fa-circle fa-stack-2x text-primary fa-shadow"></i>
+                  <i class="fa fa-{{ job.icon }} fa-stack-1x text-inverse"></i>
+              </span>
+            </div>
+            <div class="col-md-8">
+              <h3>{{ job.role }}</h3>
+              <p class="large">
+                {{ job.description }}
+              </p>
+            </div>
           </div>
-          <div class="col-md-9">
-            <h3>{{ job.role }}</h3>
-            <p class="large">
-              {{ job.description }}
-            </p>
-          </div>
+        {% endfor %}
+        <br>
+        <!-- <div class="row">
+
+        </div> -->
+        <div class="text-center">
+          <a class="btn btn-xl page-scroll" href="#apply">Apply</a>
         </div>
-      {% endfor %}
-
-      <br>
-
-      <div class="text-center">
-        <a class="btn btn-xl page-scroll" href="#apply">Apply</a>
       </div>
-  </div>
-</section>
-
-
-<section id="design-eng" class="bg-image coding-bg">
-
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Design &amp; Engineering Roles</h2>
-              <br>
+      <div class="tab-pane fade design-bg" id="designRoles">
+        {% for job in site.data.jobs.design %}
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <span class="fa-stack fa-5x">
+                  <i class="fa fa-circle fa-stack-2x text-primary fa-shadow"></i>
+                  <i class="fa fa-{{ job.icon }} fa-stack-1x text-inverse"></i>
+              </span>
+            </div>
+            <div class="col-md-8">
+              <h3>{{ job.role }}</h3>
+              <p class="large">
+                {{ job.description }}
+              </p>
+            </div>
           </div>
-      </div>
-      {% for job in site.data.jobs.design_eng %}
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-{{ job.icon }} fa-stack-1x text-primary"></i>
-            </span>
-          </div>
-          <div class="col-md-9">
-            <h3>{{ job.role }}</h3>
-            <p class="large">
-              {{ job.description }}
-            </p>
-          </div>
+        {% endfor %}
+        <br>
+        <div class="text-center">
+          <a class="btn btn-xl page-scroll" href="#apply">Apply</a>
         </div>
-      {% endfor %}
-
-      <br>
-
-      <div class="text-center">
-        <a class="btn btn-xl page-scroll" href="#apply">Apply</a>
       </div>
+      <div class="tab-pane fade eng-bg" id="engRoles">
+        {% for job in site.data.jobs.eng %}
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <span class="fa-stack fa-5x">
+                  <i class="fa fa-circle fa-stack-2x text-primary fa-shadow"></i>
+                  <i class="fa fa-{{ job.icon }} fa-stack-1x text-inverse"></i>
+              </span>
+            </div>
+            <div class="col-md-8">
+              <h3>{{ job.role }}</h3>
+              <p class="large">
+                {{ job.description }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+        <br>
+        <div class="text-center">
+          <a class="btn btn-xl page-scroll" href="#apply">Apply</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
