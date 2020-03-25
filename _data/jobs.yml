@@ -1,8 +1,11 @@
 business:
+  - role: Product Manager Intern
+    description: You will work with one of our portfolio startups to craft amazing products by dealing with important product strategy and execution challenges! You will be provided a Product Mentor with PM experience at Google/Facebook/Microsoft or Amazon to help aid you in achieving your professional development and career goals.
+    icon: lightbulb-o
   - role: Market Research & Strategy Intern
     description: >
       One of our portfolio companies is working on a new direct to consumer brand. You will do market research to understand the product landscape, needs of relevant stakeholders, and supply chain logistics to help craft a go-to-market strategy.
-    icon: lightbulb-o
+    icon: desktop
   - role: Product Marketing Manager Intern
     description: >
       You will work with one of our portfolio companies to craft a marketing plan and then get to own the execution of it! This could entail exposure to social media marketing & content creation, online ad campaign management, influencer relations, press release strategy, sales, and more depending on a combination of business need and your interests.
@@ -18,6 +21,9 @@ design:
       You will help graphically shape the brand identity of a portfolio company. Please include links or attachments of your previous design work in your application if applicable.
     icon: paint-brush
 eng:
+  - role: Product Manager Intern
+    description: You will work with one of our portfolio startups to craft amazing products by dealing with important product strategy and execution challenges! You will be provided a Product Mentor with PM experience at Google/Facebook/Microsoft or Amazon to help aid you in achieving your professional development and career goals.
+    icon: line-chart
   - role: Software Engineering Intern
     description: >
       You will build proof-of-concepts of product ideas. Available projects include are currently heavily focused on front-end web development. Please include links to your Github or other previous projects if applicable. 
