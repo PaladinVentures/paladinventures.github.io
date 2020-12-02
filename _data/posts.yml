@@ -1,39 +1,24 @@
-- title: Swipe to Unlock
-  subtitle: "#1 Business Bestseller"
+- title: Stealth Startup
+  subtitle: Coming Soon
   layout: default
-  # date: 2014-07-18
-  img: swipe-to-unlock.png
-  thumbnail: swipe-to-unlock-thumbnail.png
-  alt: Swipe to Unlock
-  # project-date: April 2014
-  # client: Start Bootstrap
-  url: http://swipetounlock.com/
-  category: Education
-  description: "A #1 Amazon Business Bestseller, Swipe to Unlock explains the fundamentals of technology and business strategy to non-experts. Through real-world examples, learn about machine learning, big data, and the cloud — without writing a single line of code."
-- title: Belle Apps
-  subtitle: Software Development Consultancy
+  img: paladin-steel-thumbnail.jpg
+  thumbnail: paladin-steel-thumbnail.jpg
+  alt: Stealth Startup
+  category: Stealth
+- title: Stealth Startup
+  subtitle: Coming Soon
   layout: default
-  # date: 2014-07-18
-  img: belle-apps.png
-  thumbnail: belle-apps-thumbnail.png
-  alt: Belle Apps
-  url: http://belleapps.me/
-  # project-date: April 2014
-  # client: Start Bootstrap
-  category: Software
-  description: A software development consultancy specializing in mobile, web, and ML projects. Staffed by students from top schools including the Ivy League, MIT, and Stanford.
-- title: DropRave
-  subtitle: "EDM Clothing Brand"
+  img: stealth-business.png
+  thumbnail: stealth-business-thumbnail.png
+  alt: Stealth Startup
+  category: Stealth
+- title: Stealth Startup
+  subtitle: Coming Soon
   layout: default
-  # date: 2014-07-18
-  img: droprave.png
-  thumbnail: droprave-thumbnail.png
-  alt: DropRave
-  url: https://droprave.com/
-  # project-date: April 2014
-  # client: Start Bootstrap
-  category: eCommerce
-  description: High-quality EDM clothing for an affordable price. Featuring all-over prints and LED Gear, this is the place to find your perfect look and express yourself in the EDM community.
+  img: stealth.jpg
+  thumbnail: stealth-thumbnail.png
+  alt: Stealth Startup
+  category: Stealth
 - title: Stealth Startup
   subtitle: Coming Soon
   layout: default
